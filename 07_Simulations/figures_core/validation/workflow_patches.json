@@ -1,0 +1,5 @@
+{
+  "Fig3": "Added independent model-recompute helper; science data unchanged; current docs corrected",
+  "Fig4": "Full workflow includes run_grid_refinement and analyze_refinement; original wrappers preserved in source_materials",
+  "physics_solver_modified": false
+}

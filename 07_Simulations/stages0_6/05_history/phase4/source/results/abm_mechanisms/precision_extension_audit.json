@@ -1,0 +1,14 @@
+{
+  "added_futures": 72,
+  "added_population_branches": 216,
+  "rounds_per_branch": 300,
+  "combined_futures": 96,
+  "combined_branches": 288,
+  "preparation_roots": 6,
+  "new_metric_rows": 3024,
+  "max_mean_error": 2.220446049250313e-16,
+  "max_count_error": 5.551115123125783e-17,
+  "minimum_wealth": 4.4595617117983147e-10,
+  "holdout_read": false,
+  "seconds": 333.54250979423523
+}

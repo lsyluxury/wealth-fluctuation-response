@@ -1,0 +1,12 @@
+{
+  "development": {
+    "source_files": 20,
+    "rows": 17640,
+    "compiled_file": "data/compiled/development_all_population_runs.csv.gz"
+  },
+  "holdout_locked": {
+    "source_files": 60,
+    "rows": 50400,
+    "compiled_file": "data/compiled/holdout_locked_all_population_runs.csv.gz"
+  }
+}

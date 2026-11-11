@@ -1,0 +1,40 @@
+{
+  "files": {
+    "inputs/w0_fixed.npy": "00c9de502b80ba6c540c6ad11516e6e55c742f9dd4e44a5b83898e8a58f1f86a",
+    "inputs/Fig2/data/w0_fixed.npy": "00c9de502b80ba6c540c6ad11516e6e55c742f9dd4e44a5b83898e8a58f1f86a",
+    "inputs/Fig2/data/direct_multitime.csv": "8cdfb7584347912824546b1cd67b53347f649a7b5cb4ea607e56fd991dc15b90",
+    "inputs/Fig2/code/recompute_panel_e.py": "3c4fdea742934a6695dd15fb40c19e69923256295b9a0a784faca40e844b46ec"
+  },
+  "fixed_w0_equal": true,
+  "parameters_verified_in_archived_recompute_script": {
+    "N": 1000,
+    "EPS": 0.14,
+    "CHI": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "H": 0.3,
+    "MU": 1.0,
+    "R": 10.0,
+    "P": 0.1,
+    "lambda": [
+      0.0,
+      0.25,
+      -0.25
+    ],
+    "DIRECT_REPS": 3000,
+    "CHECKS": [
+      20,
+      40,
+      60,
+      80
+    ]
+  },
+  "comparisons_use_rounds": [
+    40,
+    80
+  ],
+  "new_neutral_seed_base": 202611070910000,
+  "provenance_limit": "Original direct CSV has no embedded initial-state hash; equivalence is verified against its packaged fixed input and recompute script, and identical copies from the original handoff."
+}

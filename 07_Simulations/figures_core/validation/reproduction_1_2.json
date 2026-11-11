@@ -1,0 +1,37 @@
+[
+  {
+    "figure": 1,
+    "script": "prepare_fig1_data.py",
+    "args": [],
+    "returncode": 0,
+    "seconds": 2.208027254000001
+  },
+  {
+    "figure": 1,
+    "script": "plot_fig1_v5.py",
+    "args": [],
+    "returncode": 0,
+    "seconds": 18.393045760999996
+  },
+  {
+    "figure": 1,
+    "script": "audit_fig1_v5.py",
+    "args": [],
+    "returncode": 0,
+    "seconds": 1.5630959789999963
+  },
+  {
+    "figure": 2,
+    "script": "prepare_fig2_data.py",
+    "args": [],
+    "returncode": 0,
+    "seconds": 2.3591440650000095
+  },
+  {
+    "figure": 2,
+    "script": "audit_fig2_final.py",
+    "args": [],
+    "returncode": 0,
+    "seconds": 1.8712710790000244
+  }
+]

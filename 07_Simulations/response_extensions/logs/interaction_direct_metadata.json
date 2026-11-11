@@ -1,0 +1,81 @@
+{
+  "mode": "direct",
+  "n_futures": 6000,
+  "N": 1000,
+  "checkpoints_rounds": [
+    80,
+    160,
+    300
+  ],
+  "times": [
+    8.0,
+    16.0,
+    30.0
+  ],
+  "epsilon": 0.14,
+  "h": 0.3,
+  "mu": 1.0,
+  "rounds_per_time": 10.0,
+  "chi": [
+    0.0,
+    0.03
+  ],
+  "lambdas": [
+    0.0,
+    0.1,
+    -0.1,
+    0.25,
+    -0.25,
+    0.5,
+    -0.5
+  ],
+  "observables": [
+    "G",
+    "M",
+    "E"
+  ],
+  "bottom_initial_fraction": 0.5,
+  "top_initial_fraction": 0.1,
+  "initial_state": "inputs/w0_fixed.npy",
+  "initial_sha256": "00c9de502b80ba6c540c6ad11516e6e55c742f9dd4e44a5b83898e8a58f1f86a",
+  "condition": "one fixed initial wealth vector, independent stationary Gaussian advantages",
+  "branch_randomness": "matching, uniform winner draw and external advantage history shared within future",
+  "future_unit": "independent future seed; not an independently prepared initial state",
+  "independent_prediction_and_validation_seeds": true,
+  "seed_base": 771071000,
+  "seed_end_exclusive": 771077000,
+  "hermite_orders": [
+    1,
+    3,
+    5,
+    7,
+    9,
+    11,
+    13,
+    15,
+    17,
+    19,
+    21,
+    23
+  ],
+  "hermite_weights": [
+    0.3183098861837907,
+    0.013262911924324607,
+    0.0014920775914865224,
+    0.0002220353558759703,
+    3.777684874278652e-05,
+    6.954374427649335e-06,
+    1.3485245284384091e-06,
+    2.713102920310614e-07,
+    5.6107367377747335e-08,
+    1.1853091500123559e-08,
+    2.547003590205114e-09,
+    5.549548336365879e-10
+  ],
+  "covariance_truncation_tail_at_zero": 1.5744727743793874e-10,
+  "score_formula": "A_n=(1/4) sum_{d=1}^{n-1} C_u(d) sum_i sum_{k=1}^{n-d} sigma[i,k] sigma[i,k+d]",
+  "score_is_path_quantity": true,
+  "elapsed_seconds": 83.39292645454407,
+  "branch_order": "raw[future,checkpoint,lambda,chi,observable]",
+  "rounding": "no winsorization, clipping, smoothing or endpoint fitting"
+}

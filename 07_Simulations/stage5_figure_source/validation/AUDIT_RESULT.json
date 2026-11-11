@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "inputs": {
+    "full40_N10000.csv": "0f0f8c67b0728bbe7c304037bf58ab498a711e0ebb60fbe6f233a5d4669b3d66",
+    "late40_N10000.csv": "ad3cf4d848bde0cd94e2e84ecddbac2d3d61e93e23b409e490bf0b2b9188f12d",
+    "late_retag_paired_contrasts.csv": "f1b6567c3f3e050dc51158b15229cd8d87298620e9dff87e22276766c18eedd6",
+    "late_retag_summary_40roots.csv": "ca7c741f1ed07f76cdaa58faa5253bf5ef81691a0792fe4ca10247821039992b",
+    "rootpaired_contrasts_40roots.csv": "be0dd0ec2cb8bc8e2bcbfff8f2eeb2a2e86cc4214d7aff7d66c1b0ec3422b55f",
+    "summary_42conditions_40roots_time.csv": "1e4eeebd05ae66f830237c8de19758ae7f1c33e1da6b936d2720cda9de325a25"
+  },
+  "n_joint_grid": 42,
+  "n_roots": 40,
+  "late_tw30_tau30": {
+    "chi0_M_percent": 0.1375,
+    "chi003_M_percent": 7.225
+  },
+  "joint_lam4": {
+    "chi0_G": 0.843479558863341,
+    "chi003_G": 0.665202708317018,
+    "chi0_M_percent": 3.3545,
+    "chi003_M_percent": 8.2835,
+    "chi003_Ruw": 0.334913340528833
+  },
+  "interaction_lam4_chi003": {
+    "G": 0.0671449692073611,
+    "M": 2.288
+  }
+}

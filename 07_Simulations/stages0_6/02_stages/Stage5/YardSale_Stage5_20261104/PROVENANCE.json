@@ -1,0 +1,167 @@
+{
+  "title": "Yard-Sale Stage5 joint intervention and late retagging",
+  "date": "2026-11-04",
+  "model_parameters": {
+    "epsilon": 0.14,
+    "r": 10,
+    "mu": 1,
+    "h": 0.3,
+    "Ginit_target": 0.65,
+    "time_end": 30
+  },
+  "full_grid": {
+    "lambda": [
+      0,
+      0.5,
+      1,
+      2,
+      4,
+      8,
+      12
+    ],
+    "chi": [
+      0,
+      0.005,
+      0.01,
+      0.02,
+      0.03,
+      0.06
+    ],
+    "N": 10000,
+    "root_ids": [
+      20000000,
+      20000001,
+      20000002,
+      20000003,
+      20000004,
+      20000005,
+      20000006,
+      20000007,
+      20000008,
+      20000009,
+      20000010,
+      20000011,
+      20000012,
+      20000013,
+      20000014,
+      20000015,
+      20000016,
+      20000017,
+      20000018,
+      20000019,
+      20000020,
+      20000021,
+      20000022,
+      20000023,
+      20000024,
+      20000025,
+      20000026,
+      20000027,
+      20000028,
+      20000029,
+      20000030,
+      20000031,
+      20000032,
+      20000033,
+      20000034,
+      20000035,
+      20000036,
+      20000037,
+      20000038,
+      20000039
+    ],
+    "independent_roots": 40,
+    "branch_records": 1680
+  },
+  "archived_scale": {
+    "N": 100000,
+    "root_ids": [
+      2026101201,
+      2026101202,
+      2026101203,
+      2026101204,
+      2026101205,
+      2026101206
+    ],
+    "independent_roots": 6,
+    "branch_records": 252
+  },
+  "late_retag": {
+    "N": 10000,
+    "roots": 40,
+    "lambda": 4,
+    "early_chi": 0,
+    "tw": [
+      30,
+      50
+    ],
+    "later_chi": [
+      0,
+      0.01,
+      0.03,
+      0.06
+    ],
+    "tau": [
+      0,
+      5,
+      10,
+      20,
+      30
+    ]
+  },
+  "kinetic": {
+    "root_ids": [
+      2026101201,
+      2026101202,
+      2026101203,
+      2026101204,
+      2026101205,
+      2026101206
+    ],
+    "dx_coarse": 0.05,
+    "na_coarse": 24,
+    "conditions": [
+      [
+        0,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        4,
+        0.01
+      ],
+      [
+        4,
+        0.03
+      ],
+      [
+        4,
+        0.06
+      ],
+      [
+        0,
+        0.03
+      ],
+      [
+        8,
+        0.03
+      ]
+    ],
+    "medium_seed": 2026101201,
+    "medium_dx": 0.025,
+    "medium_na": 48,
+    "original_abs_tolerance_not_all_met": true
+  },
+  "environment": {
+    "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "numba": "0.65.1",
+    "pandas": "2.2.3"
+  },
+  "authenticity": "All figures derived from archived/independently simulated data; no synthetic observations",
+  "no_pooled_inference": "Never pool N=10000 and N=100000 roots into a single t-test"
+}

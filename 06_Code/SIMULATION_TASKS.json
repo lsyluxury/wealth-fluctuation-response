@@ -1,0 +1,511 @@
+{
+  "fig1_selection": {
+    "description": "图1c：40个N100000准备态及原选择分支",
+    "source_project": "07_Simulations/stages0_6/05_history/dense/source",
+    "commands": [
+      {
+        "script": "src/run_dense_abm.py",
+        "args": [
+          "--workers",
+          "2"
+        ],
+        "cwd": "."
+      }
+    ],
+    "clear_in_fresh_workspace": [
+      "runs"
+    ],
+    "notes": ""
+  },
+  "fig1_redraw96": {
+    "description": "图1d：6准备态×16未来完整独立重抽",
+    "source_project": "07_Simulations/stages0_6/05_history/phase4/source",
+    "commands": [
+      {
+        "script": "@root/06_Code/simulate_redraw96.py",
+        "args": [
+          "--source",
+          "@project",
+          "--out",
+          "@work/results"
+        ],
+        "cwd": "."
+      }
+    ],
+    "clear_in_fresh_workspace": [],
+    "notes": "新驱动只组合原来的24+72个未来；底层one函数和种子未改。"
+  },
+  "weak_abm": {
+    "description": "图2b–d：130准备态、四优势过程、7个λ分支",
+    "source_project": "07_Simulations/stages0_6",
+    "commands": [
+      {
+        "script": "02_stages/Stage2/code/stage2_abm.py",
+        "args": [
+          "--roots",
+          "130",
+          "--N",
+          "10000",
+          "--rounds",
+          "300",
+          "--modes",
+          "0,1,2",
+          "--output",
+          "@work/results/weak_modes012.csv"
+        ],
+        "cwd": "02_stages/Stage2/code"
+      },
+      {
+        "script": "02_stages/Stage2/code/stage2_finite_mix.py",
+        "args": [
+          "--roots",
+          "130",
+          "--N",
+          "10000",
+          "--rounds",
+          "300",
+          "--out",
+          "@work/results/weak_mixed.csv"
+        ],
+        "cwd": "02_stages/Stage2/code"
+      }
+    ],
+    "clear_in_fresh_workspace": [],
+    "notes": "mixed的类型种子和双刷新率来自原程序；并非mode5冻结部分优势。"
+  },
+  "weak_theory": {
+    "description": "图2b–d：300轮有限筹码Taylor系数",
+    "source_project": "07_Simulations/stages0_6",
+    "commands": [
+      {
+        "script": "02_stages/Stage2/code/stage2_kinetic_jet.py",
+        "args": [
+          "--modes",
+          "0,1,2",
+          "--rounds",
+          "300",
+          "--dx",
+          ".025",
+          "--na",
+          "48",
+          "--out",
+          "@work/results/kinetic012.csv"
+        ],
+        "cwd": "02_stages/Stage2/code"
+      },
+      {
+        "script": "02_stages/Stage2/code/stage2_kinetic_jet.py",
+        "args": [
+          "--modes",
+          "6",
+          "--rounds",
+          "300",
+          "--dx",
+          ".025",
+          "--na",
+          "64",
+          "--out",
+          "@work/results/kinetic_mixed.csv"
+        ],
+        "cwd": "02_stages/Stage2/code"
+      }
+    ],
+    "clear_in_fresh_workspace": [],
+    "notes": "完整历史目录随工作副本保留，确保原Phase4算子和归档初态路径有效。"
+  },
+  "strong_abm": {
+    "description": "图2f：130准备态的Uniform与重抽加反号过程",
+    "source_project": "07_Simulations/stages0_6/02_stages/Stage3/YardSale_Stage3_20261104",
+    "commands": [
+      {
+        "script": "code/stage3_abm.py",
+        "args": [
+          "--roots",
+          "130",
+          "--N",
+          "10000",
+          "--modes",
+          "1",
+          "--out",
+          "@work/results/P2.csv"
+        ],
+        "cwd": "code"
+      },
+      {
+        "script": "code/stage3_matched_marginal.py",
+        "args": [
+          "--roots",
+          "130",
+          "--N",
+          "10000",
+          "--out",
+          "@work/results/P7.csv"
+        ],
+        "cwd": "code"
+      }
+    ],
+    "clear_in_fresh_workspace": [],
+    "notes": "输出含同根正负λ及全部原观察时点。比值自举另用原stage3分析脚本或归档source表。"
+  },
+  "panel2e": {
+    "description": "图2e：16000中性未来与每过程3000独立有偏未来",
+    "source_project": "07_Simulations/figures_core/packages/Fig2",
+    "commands": [
+      {
+        "script": "code/recompute_panel_e.py",
+        "args": [],
+        "cwd": "."
+      }
+    ],
+    "clear_in_fresh_workspace": [
+      "data/direct_multitime.csv",
+      "data/neutral_multitime.csv",
+      "data/panel_e_points.csv"
+    ],
+    "notes": "保留data/w0_fixed.npy，不重新准备W0。"
+  },
+  "long_time": {
+    "description": "图3a–c：20准备态、10个λ、完整12000轮",
+    "source_project": "07_Simulations/long_time",
+    "commands": [
+      {
+        "script": "code/run_extended_abm.py",
+        "args": [
+          "--roots",
+          "20",
+          "--N",
+          "10000",
+          "--outdir",
+          "@work/results/raw"
+        ],
+        "cwd": "."
+      }
+    ],
+    "clear_in_fresh_workspace": [],
+    "notes": "当前主图仅选该完整记录中的t≤200或100；不截短原研究轨迹。"
+  },
+  "waiting": {
+    "description": "图3e–h：80准备态完整等待时间与群体来源",
+    "source_project": "07_Simulations/stages0_6/02_stages/Stage4",
+    "commands": [
+      {
+        "script": "code/stage4_abm.py",
+        "args": [
+          "--roots",
+          "80",
+          "--N",
+          "10000",
+          "--kind",
+          "independent",
+          "--out",
+          "@project/results/stage4_main80.csv"
+        ],
+        "cwd": "."
+      },
+      {
+        "script": "code/stage4_analyze.py",
+        "args": [],
+        "cwd": "."
+      }
+    ],
+    "clear_in_fresh_workspace": [
+      "results/stage4_main80.csv",
+      "results/stage4_effects_by_root80.csv",
+      "results/stage4_summary80.csv"
+    ],
+    "notes": "从t0分属λ0/4两种历史；不当成晚期共同状态切换。源目录其它restarter结果是归档输入，不是本任务新运行。"
+  },
+  "tagged_theory": {
+    "description": "图3e：代表态、基准λ4、分位边界重构",
+    "source_project": "07_Simulations/stages0_6/02_stages/Stage4",
+    "commands": [
+      {
+        "script": "code/stage4_tagged_kinetic.py",
+        "args": [
+          "--mode",
+          "baseline",
+          "--lambda-value",
+          "4",
+          "--seed",
+          "2026101201",
+          "--dx",
+          ".025",
+          "--na",
+          "48",
+          "--out",
+          "@work/results/tagged_baseline.csv"
+        ],
+        "cwd": "."
+      }
+    ],
+    "clear_in_fresh_workspace": [],
+    "notes": ""
+  },
+  "fig3d_theory": {
+    "description": "图3d：5个λ、1000轮代表态理论",
+    "source_project": "07_Simulations/figures_core",
+    "commands": [
+      {
+        "script": "scripts/recompute_fig3d.py",
+        "args": [],
+        "cwd": "."
+      }
+    ],
+    "clear_in_fresh_workspace": [],
+    "notes": "不带--write-plot-table；新理论结果写入工作副本validation，与归档曲线比较。"
+  },
+  "joint42_abm": {
+    "description": "图4d–f：40准备态、42联合条件",
+    "source_project": "07_Simulations/stages0_6/02_stages/Stage5/YardSale_Stage5_20261104",
+    "commands": [
+      {
+        "script": "code/stage5_grid_abm.py",
+        "args": [
+          "--grid",
+          "full",
+          "--N",
+          "10000",
+          "--roots",
+          "40",
+          "--kind",
+          "independent",
+          "--out",
+          "@work/results/joint42.csv"
+        ],
+        "cwd": "."
+      }
+    ],
+    "clear_in_fresh_workspace": [],
+    "notes": ""
+  },
+  "late_tax_abm": {
+    "description": "图4b–c：40个晚期共同状态、2个tw、4个χ",
+    "source_project": "07_Simulations/stages0_6/02_stages/Stage5/YardSale_Stage5_20261104",
+    "commands": [
+      {
+        "script": "code/stage5_late_retag.py",
+        "args": [
+          "--N",
+          "10000",
+          "--roots",
+          "40",
+          "--kind",
+          "independent",
+          "--out",
+          "@work/results/late40.csv"
+        ],
+        "cwd": "."
+      }
+    ],
+    "clear_in_fresh_workspace": [],
+    "notes": ""
+  },
+  "matched42_abm": {
+    "description": "图4g–i：6归档十万人初态×16未来×42条件",
+    "source_project": "07_Simulations/figures_core/packages/Fig4",
+    "commands": [
+      {
+        "script": "code/run_conditional_abm.py",
+        "args": [
+          "--futures",
+          "16",
+          "--workers",
+          "2"
+        ],
+        "cwd": "."
+      }
+    ],
+    "clear_in_fresh_workspace": [
+      "data/raw/futures"
+    ],
+    "notes": ""
+  },
+  "matched42_theory": {
+    "description": "图4g–i：两套全参数网格及144条加密计算",
+    "source_project": "07_Simulations/figures_core/packages/Fig4",
+    "commands": [
+      {
+        "script": "code/run_theory_grid.py",
+        "args": [
+          "--levels",
+          "medium,fine",
+          "--workers",
+          "2"
+        ],
+        "cwd": "."
+      },
+      {
+        "script": "code/refine_neutral.py",
+        "args": [],
+        "cwd": "."
+      },
+      {
+        "script": "code/refine_selected.py",
+        "args": [],
+        "cwd": "."
+      }
+    ],
+    "clear_in_fresh_workspace": [
+      "data/raw/theory",
+      "data/raw/refinement"
+    ],
+    "notes": "总648条确定性理论记录；不能因文件存在跳过而称重跑。本任务默认删除的仅是新工作副本中的既有结果。"
+  },
+  "matched42_full": {
+    "description": "图4最终验证：完整模拟、理论、加密和统计",
+    "source_project": "07_Simulations/figures_core/packages/Fig4",
+    "commands": [
+      {
+        "script": "code/run_conditional_abm.py",
+        "args": [
+          "--futures",
+          "16",
+          "--workers",
+          "2"
+        ],
+        "cwd": "."
+      },
+      {
+        "script": "code/run_theory_grid.py",
+        "args": [
+          "--levels",
+          "medium,fine",
+          "--workers",
+          "2"
+        ],
+        "cwd": "."
+      },
+      {
+        "script": "code/refine_neutral.py",
+        "args": [],
+        "cwd": "."
+      },
+      {
+        "script": "code/refine_selected.py",
+        "args": [],
+        "cwd": "."
+      },
+      {
+        "script": "code/analyze_validation.py",
+        "args": [],
+        "cwd": "."
+      },
+      {
+        "script": "code/analyze_refinement.py",
+        "args": [],
+        "cwd": "."
+      }
+    ],
+    "clear_in_fresh_workspace": [
+      "data/raw/futures",
+      "data/raw/theory",
+      "data/raw/refinement"
+    ],
+    "notes": "全量计算成本显著高于重绘或代表样本测试；不会修改归档主表。"
+  },
+  "kernel_full": {
+    "description": "逐滞后核：16000中性路径、4个终点和全滞后",
+    "source_project": "07_Simulations/response_extensions",
+    "commands": [
+      {
+        "script": "code/kernel_compute.py",
+        "args": [
+          "--reps",
+          "16000",
+          "--workers",
+          "2",
+          "--output-tag",
+          "main"
+        ],
+        "cwd": "."
+      },
+      {
+        "script": "code/kernel_analyze.py",
+        "args": [
+          "--tag",
+          "main"
+        ],
+        "cwd": "."
+      },
+      {
+        "script": "code/kernel_lag_shares.py",
+        "args": [],
+        "cwd": "."
+      },
+      {
+        "script": "code/plot_kernel_supplement.py",
+        "args": [],
+        "cwd": "."
+      }
+    ],
+    "clear_in_fresh_workspace": [
+      "data/kernel_main_raw",
+      "data/kernel_main_meta.json"
+    ],
+    "notes": "需C++17编译器；程序内嵌源代码，非闭源二进制。"
+  },
+  "interaction_full": {
+    "description": "弱选择交互：32000中性、6000有偏未来及独立验证",
+    "source_project": "07_Simulations/response_extensions",
+    "commands": [
+      {
+        "script": "code/interaction_simulation.py",
+        "args": [
+          "--mode",
+          "neutral",
+          "--reps",
+          "32000",
+          "--workers",
+          "2"
+        ],
+        "cwd": "."
+      },
+      {
+        "script": "code/interaction_simulation.py",
+        "args": [
+          "--mode",
+          "direct",
+          "--reps",
+          "6000",
+          "--workers",
+          "2"
+        ],
+        "cwd": "."
+      },
+      {
+        "script": "code/interaction_analyze.py",
+        "args": [
+          "--bootstrap",
+          "1000"
+        ],
+        "cwd": "."
+      },
+      {
+        "script": "code/plot_interaction_supplement.py",
+        "args": [],
+        "cwd": "."
+      }
+    ],
+    "clear_in_fresh_workspace": [
+      "data/interaction_neutral_raw.npz",
+      "data/interaction_direct_raw.npz"
+    ],
+    "notes": ""
+  },
+  "exact_controls": {
+    "description": "复现入口自检：首轮与有限N两轮精确枚举",
+    "source_project": "07_Simulations/figures_core/packages/Fig2",
+    "commands": [
+      {
+        "script": "@root/06_Code/verify_exact_controls.py",
+        "args": [
+          "--out",
+          "@work/results"
+        ],
+        "cwd": "."
+      }
+    ],
+    "clear_in_fresh_workspace": [],
+    "notes": "确定性枚举，不是大规模ABM；用于检验统一入口和环境。"
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "scope": "42 simultaneous-intervention conditions, all four prespecified positive observation times; no refitting to ABM outcomes",
+  "lambda_values": [
+    0,
+    0.5,
+    1,
+    2,
+    4,
+    8,
+    12
+  ],
+  "chi_values": [
+    0,
+    0.005,
+    0.01,
+    0.02,
+    0.03,
+    0.06
+  ],
+  "observation_rounds": [
+    0,
+    50,
+    100,
+    200,
+    300
+  ],
+  "rounds_per_model_time": 10,
+  "initial_roots": [
+    2026101201,
+    2026101202,
+    2026101203,
+    2026101204,
+    2026101205,
+    2026101206
+  ],
+  "agents_per_root": 100000,
+  "conditional_futures_per_root": 16,
+  "advantage_update": "Gaussian-Poisson: h=0.3, mu=1, r=10; no replacement by uniform redraw",
+  "initial_projection": "Preserve empirical joint wealth-score state and original B50/M40/T10 labels; no factorization",
+  "redistribution_per_round": "rho=exp(-chi/10); w_next=rho*w+(1-rho)",
+  "medium_grid": {
+    "dlogw": 0.025,
+    "score_bins": 48
+  },
+  "fine_grid": {
+    "dlogw": 0.01,
+    "score_bins": 96
+  },
+  "wealth_grid_log_bounds": [
+    -55,
+    8
+  ],
+  "population_node_retention_cutoff": 1e-18,
+  "theory_ABM_acceptance": {
+    "G": {
+      "tolerance": 0.005,
+      "units": "Gini index"
+    },
+    "M": {
+      "tolerance": 0.002,
+      "units": "probability; equals 0.2 percentage points"
+    },
+    "E": {
+      "tolerance": 0.002,
+      "units": "probability; equals 0.2 percentage points"
+    },
+    "interval": "two-sided pointwise 95% Student-t, df=5, paired differences across six independent initial roots; ABM futures averaged first within root",
+    "supported": "entire confidence interval contained in [-tolerance,+tolerance]",
+    "outside": "entire confidence interval strictly outside tolerance window",
+    "inconclusive": "otherwise; not relabeled as supported merely because interval overlaps zero"
+  },
+  "numerical_convergence_diagnostic": "Report fine-minus-medium differences for every root, condition, time and metric. Flag mean grid shifts exceeding one-quarter of the acceptance tolerance; this is a diagnostic budget, not the original statistical equivalence rule.",
+  "multiplicity": "Pointwise intervals, not simultaneous 95% coverage over the parameter grid.",
+  "ancillary_rank_correlation": "Grid midrank correlation recorded without claiming an original precision threshold for R_uw.",
+  "scope_exclusions": [
+    "late-retagging experiments are a distinct initial-state design",
+    "no certification of continuous time between observed checkpoints",
+    "no universal steady-state or thermodynamic-limit claims"
+  ],
+  "conditional_sampling_extension": "Fixed extension from 8 to 16 futures for ALL 42 conditions and all 6 roots, not only favorable parameter points; preparation remains inference unit.",
+  "extra_refinement_policy": {
+    "neutral": "All six chi values and all six roots: exact score-integrated lambda=0 solver at dlogw=.01,.005,.0025. Equality at .01 is checked against the full 96-bin calculation.",
+    "nonzero_selection": "All six roots and all four positive observation times for every (lambda=.5, chi>0) condition and the Stage-6 reference (4,.03): dlogw=.005, score_bins=96.",
+    "final_theory_selection": "Use the finest computed wealth grid for each complete parameter condition. Refinement was triggered by numerical sensitivity; no per-time/per-metric selection by agreement. Retain the full uniform-grid baseline."
+  }
+}

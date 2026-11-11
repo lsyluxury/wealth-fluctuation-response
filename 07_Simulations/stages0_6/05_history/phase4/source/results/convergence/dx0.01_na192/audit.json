@@ -1,0 +1,80 @@
+{
+  "A0.0": {
+    "max_mass_error": 6.5503158452884236e-15,
+    "max_wealth_error": 1.021405182655144e-14,
+    "min_mass": 0.0,
+    "max_count_error": 6.938893903907228e-15,
+    "seconds": 114.20965480804443
+  },
+  "A4.0": {
+    "max_mass_error": 5.440092820663267e-15,
+    "max_wealth_error": 3.4416913763379853e-15,
+    "min_mass": 0.0,
+    "max_count_error": 8.881784197001252e-16,
+    "seconds": 129.97124099731445
+  },
+  "relabel": {
+    "mass_error": 1.1102230246251565e-16,
+    "wealth_error": 0.0,
+    "added_variance": 1.8830309755912822e-08,
+    "splits": [
+      {
+        "wealth": 0.029599435167892117,
+        "mass": 0.0007407594626052917,
+        "fractions": [
+          0.0,
+          0.42550777313870325,
+          1.0
+        ]
+      },
+      {
+        "wealth": 3.158192909689763,
+        "mass": 0.0008432446531992935,
+        "fractions": [
+          0.0,
+          0.10054379808783291,
+          1.0
+        ]
+      }
+    ]
+  },
+  "B0.0": {
+    "max_mass_error": 1.0880185641326534e-14,
+    "max_wealth_error": 6.328271240363392e-15,
+    "min_mass": 0.0,
+    "max_count_error": 1.887379141862766e-15,
+    "seconds": 146.64791250228882
+  },
+  "B0.03": {
+    "max_mass_error": 1.199040866595169e-14,
+    "max_wealth_error": 8.881784197001252e-15,
+    "min_mass": 0.0,
+    "max_count_error": 1.3877787807814457e-15,
+    "seconds": 73.07850646972656
+  },
+  "settings": {
+    "dx": 0.01,
+    "na": 192,
+    "xmin": -55.0,
+    "xmax": 8.0,
+    "epsilon": 0.14,
+    "h": 0.3,
+    "mu": 1.0,
+    "r": 10.0,
+    "ability_quadrature": 32,
+    "win_quadrature": 6,
+    "poisson_max": 18,
+    "threads": 1
+  },
+  "kernel": {
+    "poisson_tail": 7.4757079748510764e-37,
+    "ability_quadrature": 32,
+    "latent_gaussian_truncation": 1.523970604832094e-23,
+    "ability_max_symmetrization": 1.7694179454963432e-16,
+    "ability_max_diagonal_correction": 2.6423307986078726e-14,
+    "ability_column_error": 1.2212453270876722e-15,
+    "ability_stationary_error": 4.440892098500626e-16,
+    "ability_min_entry": 2.6811189697002157e-05,
+    "setup_seconds": 1.4247801303863525
+  }
+}

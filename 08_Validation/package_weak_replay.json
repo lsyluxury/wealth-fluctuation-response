@@ -1,0 +1,27 @@
+{
+  "rows": 21,
+  "numeric_max_abs_errors": {
+    "root": 0.0,
+    "N": 0.0,
+    "prepare_rounds": 0.0,
+    "mode": 0.0,
+    "p": 0.0,
+    "round": 0.0,
+    "lambda_value": 0.0,
+    "G": 4.440892098500626e-16,
+    "M": 0.0,
+    "E": 5.551115123125783e-17
+  },
+  "atol": 2e-12,
+  "rtol": 2e-13,
+  "N": 10000,
+  "roots_replayed": 1,
+  "processes": [
+    0,
+    1,
+    2
+  ],
+  "case": "weak",
+  "status": "PASS",
+  "seconds": 4.323609899991425
+}

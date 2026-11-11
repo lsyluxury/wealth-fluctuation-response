@@ -1,0 +1,58 @@
+{
+  "research_phase": "Stage 4 two-time top-cohort overlap",
+  "independent_ABM_roots": 80,
+  "independent_ABM_N": 10000,
+  "ABM_rounds": 800,
+  "archive_ABM_roots": 6,
+  "archive_ABM_N": 100000,
+  "same_state_restart_roots": 40,
+  "same_state_restart_N": 10000,
+  "top_cohorts": [
+    0.1,
+    0.01
+  ],
+  "waiting_times": [
+    0,
+    5,
+    10,
+    20,
+    30,
+    50
+  ],
+  "followup_time_max": 30,
+  "modes": [
+    "full_redraw",
+    "baseline_mu1_h0.3",
+    "strong_mu1_h0.9",
+    "fixed_mu0"
+  ],
+  "lambda_values": [
+    0,
+    4
+  ],
+  "tax_chi": 0,
+  "kinetic_initial_archive_seed": 2026101201,
+  "kinetic_grids": [
+    [
+      0.05,
+      24
+    ],
+    [
+      0.025,
+      48
+    ]
+  ],
+  "python": "3.13.5",
+  "libraries": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "numba": "0.65.1",
+    "pandas": "2.2.3",
+    "matplotlib": "3.10.8"
+  },
+  "caveats": [
+    "finite-time results only",
+    "kinetic predictions are one initial state, not all roots",
+    "no tax in Stage 4"
+  ]
+}

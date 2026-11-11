@@ -1,0 +1,116 @@
+{
+  "sparse_h0": {
+    "max_mass_error": 2.6756374893466273e-14,
+    "max_wealth_error": 2.6201263381153694e-14,
+    "seconds": 47.827396392822266,
+    "kernel": {
+      "poisson_tail": 7.4757079748510764e-37,
+      "ability_quadrature": 32,
+      "latent_gaussian_truncation": 1.523970604832094e-23,
+      "ability_max_symmetrization": 2.498001805406602e-16,
+      "ability_max_diagonal_correction": 1.2656542480726785e-14,
+      "ability_column_error": 1.3322676295501878e-15,
+      "ability_stationary_error": 3.3306690738754696e-16,
+      "ability_min_entry": 0.0009912768954587303,
+      "setup_seconds": 1.2030105590820312
+    }
+  },
+  "persistent_h09": {
+    "max_mass_error": 2.098321516541546e-14,
+    "max_wealth_error": 1.63202784619898e-14,
+    "seconds": 50.287667989730835,
+    "kernel": {
+      "poisson_tail": 7.4757079748510764e-37,
+      "ability_quadrature": 32,
+      "latent_gaussian_truncation": 1.523970604832094e-23,
+      "ability_max_symmetrization": 1.3600232051658168e-15,
+      "ability_max_diagonal_correction": 1.2878587085651816e-14,
+      "ability_column_error": 6.661338147750939e-16,
+      "ability_stationary_error": 3.3306690738754696e-16,
+      "ability_min_entry": 4.93400986785401e-13,
+      "setup_seconds": 1.3627684116363525
+    }
+  },
+  "frozen_mu0": {
+    "max_mass_error": 4.440892098500626e-15,
+    "max_wealth_error": 4.884981308350689e-15,
+    "seconds": 53.640891551971436,
+    "kernel": {
+      "poisson_tail": 0.0,
+      "ability_column_error": 0.0,
+      "ability_stationary_error": 0.0,
+      "ability_min_entry": 0.0,
+      "identity": true,
+      "setup_seconds": 1.3118059635162354
+    }
+  },
+  "fast_mu5": {
+    "max_mass_error": 7.771561172376096e-15,
+    "max_wealth_error": 5.551115123125783e-15,
+    "seconds": 55.82003712654114,
+    "kernel": {
+      "poisson_tail": 9.753715227745926e-24,
+      "ability_quadrature": 32,
+      "latent_gaussian_truncation": 1.523970604832094e-23,
+      "ability_max_symmetrization": 2.636779683484747e-16,
+      "ability_max_diagonal_correction": 1.2989609388114332e-14,
+      "ability_column_error": 7.771561172376096e-16,
+      "ability_stationary_error": 4.440892098500626e-16,
+      "ability_min_entry": 0.0007030409740503064,
+      "setup_seconds": 1.1247451305389404
+    }
+  },
+  "full_redraw_0.0": {
+    "max_mass_error": 1.1102230246251565e-15,
+    "max_wealth_error": 4.218847493575595e-15,
+    "seconds": 57.980133295059204,
+    "kernel": {
+      "poisson_tail": 7.4757079748510764e-37,
+      "ability_quadrature": 32,
+      "latent_gaussian_truncation": 1.523970604832094e-23,
+      "ability_max_symmetrization": 2.636779683484747e-16,
+      "ability_max_diagonal_correction": 1.2989609388114332e-14,
+      "ability_column_error": 5.551115123125783e-16,
+      "ability_stationary_error": 4.440892098500626e-16,
+      "ability_min_entry": 7.861311028366397e-05,
+      "setup_seconds": 1.4897069931030273
+    }
+  },
+  "full_redraw_4.0": {
+    "max_mass_error": 2.220446049250313e-14,
+    "max_wealth_error": 1.9539925233402755e-14,
+    "seconds": 49.584447145462036,
+    "kernel": {
+      "poisson_tail": 7.4757079748510764e-37,
+      "ability_quadrature": 32,
+      "latent_gaussian_truncation": 1.523970604832094e-23,
+      "ability_max_symmetrization": 2.636779683484747e-16,
+      "ability_max_diagonal_correction": 1.2989609388114332e-14,
+      "ability_column_error": 5.551115123125783e-16,
+      "ability_stationary_error": 4.440892098500626e-16,
+      "ability_min_entry": 7.861311028366397e-05,
+      "setup_seconds": 1.1014366149902344
+    }
+  },
+  "full_redraw_16.0": {
+    "max_mass_error": 2.142730437526552e-14,
+    "max_wealth_error": 1.942890293094024e-14,
+    "seconds": 48.1831316947937,
+    "kernel": {
+      "poisson_tail": 7.4757079748510764e-37,
+      "ability_quadrature": 32,
+      "latent_gaussian_truncation": 1.523970604832094e-23,
+      "ability_max_symmetrization": 2.636779683484747e-16,
+      "ability_max_diagonal_correction": 1.2989609388114332e-14,
+      "ability_column_error": 5.551115123125783e-16,
+      "ability_stationary_error": 4.440892098500626e-16,
+      "ability_min_entry": 7.861311028366397e-05,
+      "setup_seconds": 0.9516468048095703
+    }
+  },
+  "full_redraw_max_diff": {
+    "G": 8.881784197001252e-16,
+    "M": 2.862293735361732e-17,
+    "E": 1.5543122344752192e-15
+  }
+}

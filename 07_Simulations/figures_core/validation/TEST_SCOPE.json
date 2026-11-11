@@ -1,0 +1,15 @@
+{
+  "original_archives": "source_materials/input_archives_manifest.json",
+  "current_statistics_and_invariants": "validation/HANDOFF_AUDIT.json",
+  "fresh_two_round_enumeration": "validation/fresh_two_round_enumeration.json",
+  "Fig3d_current_recalculation": "validation/Fig3d_recomputed_theory_all.csv",
+  "replotted_figures": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "all_historical_stochastic_trajectories_rerun": false,
+  "full_648_theory_trajectories_rerun_in_this_handoff": false,
+  "code_input_units_and_scopes": "01_MAIN_HANDOFF_CN.md sections 9 and 11"
+}

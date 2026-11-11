@@ -1,0 +1,8 @@
+{
+  "stage": "A",
+  "independent_statistics_implementation": "Python csv, math.fsum, scalar sample variance, scipy Student t",
+  "checks": 24125,
+  "max_stat_abs_difference": 1.4210854715202004e-14,
+  "max_origin_share_difference": 7.105427357601002e-15,
+  "passed": true
+}

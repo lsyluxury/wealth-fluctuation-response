@@ -1,0 +1,12 @@
+{
+  "hermite_modes": 12,
+  "largest_retained_order": 23,
+  "omitted_weight_at_lag_zero": 1.5744727743793874e-10,
+  "absolute_score_tail_bound_by_round": {
+    "80": 2.6009635471979686e-05,
+    "160": 5.59495361260747e-05,
+    "300": 0.00010834666990232526
+  },
+  "population_interaction_coefficient_bound": "The same bound applies to G and E; multiply it by 0.2 for M. This is a conservative bound, not a measured error.",
+  "derivation": "C_tail(d)<=delta*exp[-mu/r*(1-h^25)*d]; |S_d|<=N*(n-d); E[A_tail]=0."
+}

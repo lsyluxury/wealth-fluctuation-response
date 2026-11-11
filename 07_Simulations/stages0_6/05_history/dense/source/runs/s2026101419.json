@@ -1,0 +1,18 @@
+{
+  "seed": 2026101419,
+  "seconds": 35.157233925000014,
+  "records": 1600,
+  "A_trajectories": 25,
+  "A_rounds": 7500,
+  "prep_round": 190,
+  "actual_prep_G": 0.6506308851232698,
+  "A_state_sha256": "148afc1fb0aaef258be504e8da9ac5bfa645cbba8814ce2987ee1d2b5796c5bd",
+  "A_stream_seed": 1001955645,
+  "max_mass_error": 1.6542323066914832e-14,
+  "cutoff_ties": 0,
+  "min_final_w": 1.87928485201332e-16,
+  "max_final_w": 34.04186798980689,
+  "engine_sha256": "61a20e8b458003ae6fe6d7e641ace29ae09a32cdbb3fe7186f0adc994282e9ce",
+  "config_sha256": "2d7548661e4bc39c412d194267ab514ff81b2bf5dd4e363e906de1064f504008",
+  "raw_sha256": "85c534abe0277f514cdf81f04f14dbf3eb885a33b6143692d82c030fae49e1fa"
+}

@@ -1,0 +1,202 @@
+{
+  "base_model": {
+    "epsilon": 0.14,
+    "baseline_h": 0.3,
+    "baseline_mu": 1.0,
+    "rounds_per_time": 10.0,
+    "advantage": "u=erf(a/sqrt(2)); Gaussian-Poisson latent renewal",
+    "round_order": [
+      "trade",
+      "renewal",
+      "tax"
+    ],
+    "tax_rho": "exp(-chi/10)"
+  },
+  "main_figure_protocols": "See DATA_README_CN.md sections 3 and 5; outline Results I–IV.",
+  "neutral_kernel": {
+    "chi": 0.0,
+    "N": 1000,
+    "epsilon": 0.14,
+    "rounds_per_time": 10.0,
+    "checkpoints": [
+      40,
+      80,
+      160,
+      300
+    ],
+    "reps": 16000,
+    "seed_base": 202611070910000,
+    "rng": "xoshiro256++ seeded by splitmix64; seed=seed_base+path_id",
+    "matching": "unbiased Fisher-Yates random permutation, sequential disjoint pairs each round",
+    "initial_sha256": "00c9de502b80ba6c540c6ad11516e6e55c742f9dd4e44a5b83898e8a58f1f86a",
+    "X_order": [
+      "G",
+      "M",
+      "E"
+    ],
+    "M_definition": "initial bottom50% entering current top10%, divided by bottom cohort size",
+    "E_definition": "fraction of initial top10% absent from current top10%",
+    "S_definition": "S_d=sum_i sum_{k=0}^{n-1-d} sigma[i,k]*sigma[i,k+d]; includes S0=N*n"
+  },
+  "interaction": {
+    "neutral": {
+      "mode": "neutral",
+      "n_futures": 32000,
+      "N": 1000,
+      "checkpoints_rounds": [
+        80,
+        160,
+        300
+      ],
+      "times": [
+        8.0,
+        16.0,
+        30.0
+      ],
+      "epsilon": 0.14,
+      "h": 0.3,
+      "mu": 1.0,
+      "rounds_per_time": 10.0,
+      "chi": [
+        0.0,
+        0.03
+      ],
+      "lambdas": [
+        0.0,
+        0.1,
+        -0.1,
+        0.25,
+        -0.25,
+        0.5,
+        -0.5
+      ],
+      "observables": [
+        "G",
+        "M",
+        "E"
+      ],
+      "bottom_initial_fraction": 0.5,
+      "top_initial_fraction": 0.1,
+      "initial_sha256": "00c9de502b80ba6c540c6ad11516e6e55c742f9dd4e44a5b83898e8a58f1f86a",
+      "condition": "one fixed initial wealth vector, independent stationary Gaussian advantages",
+      "branch_randomness": "matching, uniform winner draw and external advantage history shared within future",
+      "future_unit": "independent future seed; not an independently prepared initial state",
+      "independent_prediction_and_validation_seeds": true,
+      "seed_base": 661071000,
+      "seed_end_exclusive": 661103000,
+      "hermite_orders": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11,
+        13,
+        15,
+        17,
+        19,
+        21,
+        23
+      ],
+      "hermite_weights": [
+        0.3183098861837907,
+        0.013262911924324607,
+        0.0014920775914865224,
+        0.0002220353558759703,
+        3.777684874278652e-05,
+        6.954374427649335e-06,
+        1.3485245284384091e-06,
+        2.713102920310614e-07,
+        5.6107367377747335e-08,
+        1.1853091500123559e-08,
+        2.547003590205114e-09,
+        5.549548336365879e-10
+      ],
+      "covariance_truncation_tail_at_zero": 1.5744727743793874e-10,
+      "score_formula": "A_n=(1/4) sum_{d=1}^{n-1} C_u(d) sum_i sum_{k=1}^{n-d} sigma[i,k] sigma[i,k+d]",
+      "score_is_path_quantity": true,
+      "branch_order": "raw[future,checkpoint,chi,observable]"
+    },
+    "direct": {
+      "mode": "direct",
+      "n_futures": 6000,
+      "N": 1000,
+      "checkpoints_rounds": [
+        80,
+        160,
+        300
+      ],
+      "times": [
+        8.0,
+        16.0,
+        30.0
+      ],
+      "epsilon": 0.14,
+      "h": 0.3,
+      "mu": 1.0,
+      "rounds_per_time": 10.0,
+      "chi": [
+        0.0,
+        0.03
+      ],
+      "lambdas": [
+        0.0,
+        0.1,
+        -0.1,
+        0.25,
+        -0.25,
+        0.5,
+        -0.5
+      ],
+      "observables": [
+        "G",
+        "M",
+        "E"
+      ],
+      "bottom_initial_fraction": 0.5,
+      "top_initial_fraction": 0.1,
+      "initial_sha256": "00c9de502b80ba6c540c6ad11516e6e55c742f9dd4e44a5b83898e8a58f1f86a",
+      "condition": "one fixed initial wealth vector, independent stationary Gaussian advantages",
+      "branch_randomness": "matching, uniform winner draw and external advantage history shared within future",
+      "future_unit": "independent future seed; not an independently prepared initial state",
+      "independent_prediction_and_validation_seeds": true,
+      "seed_base": 771071000,
+      "seed_end_exclusive": 771077000,
+      "hermite_orders": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11,
+        13,
+        15,
+        17,
+        19,
+        21,
+        23
+      ],
+      "hermite_weights": [
+        0.3183098861837907,
+        0.013262911924324607,
+        0.0014920775914865224,
+        0.0002220353558759703,
+        3.777684874278652e-05,
+        6.954374427649335e-06,
+        1.3485245284384091e-06,
+        2.713102920310614e-07,
+        5.6107367377747335e-08,
+        1.1853091500123559e-08,
+        2.547003590205114e-09,
+        5.549548336365879e-10
+      ],
+      "covariance_truncation_tail_at_zero": 1.5744727743793874e-10,
+      "score_formula": "A_n=(1/4) sum_{d=1}^{n-1} C_u(d) sum_i sum_{k=1}^{n-d} sigma[i,k] sigma[i,k+d]",
+      "score_is_path_quantity": true,
+      "branch_order": "raw[future,checkpoint,lambda,chi,observable]"
+    }
+  },
+  "fixed_wealth_table": "Response_Extensions/w0_fixed.csv",
+  "fixed_wealth_origin": "Archived w0_fixed.npy; its SHA256 records the NPY bytes, not this CSV representation.",
+  "scope": "Plot and writing data only. No simulation programs or complete raw path ensemble included."
+}

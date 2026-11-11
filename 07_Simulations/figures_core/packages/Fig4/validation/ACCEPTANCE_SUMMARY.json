@@ -1,0 +1,44 @@
+{
+  "partial": false,
+  "theory_trajectories": 504,
+  "ABM_futures_completed": 96,
+  "test_counts": {
+    "E": {
+      "inconclusive": 16,
+      "supported": 152
+    },
+    "G": {
+      "inconclusive": 0,
+      "supported": 168
+    },
+    "M": {
+      "inconclusive": 0,
+      "supported": 168
+    }
+  },
+  "endpoint_counts": {
+    "E": {
+      "inconclusive": 3,
+      "supported": 39
+    },
+    "G": {
+      "inconclusive": 0,
+      "supported": 42
+    },
+    "M": {
+      "inconclusive": 0,
+      "supported": 42
+    }
+  },
+  "max_absolute_paired_mean_errors": {
+    "G": 0.0006251598850774235,
+    "M": 0.00022667457936335783,
+    "E": 0.001575982426235541
+  },
+  "max_grid_shifts": {
+    "G": 0.0022951424218954166,
+    "M": 0.0005261840673740666,
+    "E": 0.005247755197861137
+  },
+  "convergence_flags": 147
+}

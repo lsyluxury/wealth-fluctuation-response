@@ -1,0 +1,8 @@
+{
+  "source_archive_sha256": "58c3caba13c8b9041d78322bc53a5a71db7433e6e9a65494a5eabb39e828daeb",
+  "verified_retained_files": 3903,
+  "retained_bytes": 372119488,
+  "source_archive_complete": false,
+  "recovery_note": "The supplied ZIP ends inside a historical holdout output and has no central directory. Every retained file was recovered directly from a complete local ZIP member, with CRC-32, uncompressed size and SHA-256 verified. Unrelated historical documents, logs, figures, redundant pipelines, and the incomplete tail were excluded. SOURCE_FILES.csv records original file bytes before documented portability/figure edits.",
+  "excluded_incomplete_member": "07_Simulations/stages0_6/05_原始历史研究程序与数据/outputs/holdout_evaluation/paired_seed_records.csv"
+}

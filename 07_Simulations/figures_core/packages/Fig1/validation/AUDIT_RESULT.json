@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "n_independent_ABM_roots": 40,
+  "n_full_redraw_independent_roots": 6,
+  "future_histories_per_redraw_root": 16,
+  "maximum_stageA_t0_branch_difference": 0.0,
+  "maximum_redraw_95ci_over_equivalence_bound": 0.8679415543203001,
+  "figure_png_size_pixels": [
+    9960,
+    5868
+  ],
+  "sha256_files": 28
+}

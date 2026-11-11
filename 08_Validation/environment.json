@@ -1,0 +1,13 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "packages": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "pandas": "3.0.1",
+    "numba": "0.68.1",
+    "matplotlib": "3.11.2",
+    "pypdf": "6.21.4",
+    "Pillow": "13.0.0"
+  }
+}

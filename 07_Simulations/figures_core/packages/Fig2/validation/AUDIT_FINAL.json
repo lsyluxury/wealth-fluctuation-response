@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "points": 16,
+  "distinct_theory_abscissae": 12,
+  "neutral_trajectories": 16000,
+  "direct_futures_per_process": 3000,
+  "observation_rounds": [
+    20,
+    40,
+    60,
+    80
+  ],
+  "selection_strength": 0.25,
+  "max_abs_combined_SE_z_exploratory": 1.699263561496381,
+  "note": "Numerical agreement is conditional on a single fixed prepared initial wealth vector. Neutral covariance CI is an approximate pointwise interval."
+}

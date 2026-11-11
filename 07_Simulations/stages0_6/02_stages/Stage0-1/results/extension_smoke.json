@@ -1,0 +1,94 @@
+{
+  "legacy_100k_300round_traced": {
+    "n": 100000,
+    "time_seconds": 3.7499363399999766,
+    "wealth_bitwise": true,
+    "latent_bitwise": true,
+    "score_bitwise": true,
+    "trace_shape": [
+      300,
+      100000,
+      1
+    ],
+    "signed_per_round_zero": true,
+    "all_winners_losers": true,
+    "total_wealth_error": 0.0,
+    "minimum_wealth": 3.217327359679921e-16
+  },
+  "archived_metric_differences": {
+    "gini": 0.0,
+    "Q": 1.3877787807814457e-17,
+    "B50_T10": 0.0,
+    "Etop10": 0.0,
+    "rho_s": 5.551115123125783e-17
+  },
+  "legacy_short_branch_0.0_0.0": {
+    "all_state_and_rng_bitwise": true
+  },
+  "legacy_short_branch_4.0_0.0": {
+    "all_state_and_rng_bitwise": true
+  },
+  "legacy_short_branch_16.0_0.0": {
+    "all_state_and_rng_bitwise": true
+  },
+  "legacy_short_branch_4.0_0.03": {
+    "all_state_and_rng_bitwise": true
+  },
+  "new_mode_1": {
+    "conservation": 2.9558577807620168e-12,
+    "min_wealth": 0.027188184168957557,
+    "trace_shape": [
+      50,
+      2000,
+      2
+    ],
+    "overlap": {
+      "stay": 0.205,
+      "exit": 0.795,
+      "C_q": 0.11666666666666664
+    }
+  },
+  "new_mode_2": {
+    "conservation": 1.5916157281026244e-12,
+    "min_wealth": 0.027343314161182356,
+    "trace_shape": [
+      50,
+      2000,
+      2
+    ],
+    "overlap": {
+      "stay": 0.205,
+      "exit": 0.795,
+      "C_q": 0.11666666666666664
+    }
+  },
+  "new_mode_3": {
+    "conservation": 1.8189894035458565e-12,
+    "min_wealth": 0.021029468823571852,
+    "trace_shape": [
+      50,
+      2000,
+      2
+    ],
+    "overlap": {
+      "stay": 0.76,
+      "exit": 0.24,
+      "C_q": 0.7333333333333334
+    }
+  },
+  "new_mode_4": {
+    "conservation": 1.3642420526593924e-12,
+    "min_wealth": 0.027563564322938945,
+    "trace_shape": [
+      50,
+      2000,
+      2
+    ],
+    "overlap": {
+      "stay": 0.31,
+      "exit": 0.69,
+      "C_q": 0.2333333333333333
+    }
+  },
+  "tax_rank_preservation": true
+}

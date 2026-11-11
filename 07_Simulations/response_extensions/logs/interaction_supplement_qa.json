@@ -1,0 +1,23 @@
+{
+  "pdf_pages": 1,
+  "page_width_mm": 179.99999999998556,
+  "page_height_mm": 210.00000000000668,
+  "png_pixels": [
+    2125,
+    2480
+  ],
+  "visual_review": "Passed: PDF rendered with Poppler and inspected. No clipping, overlapping labels, missing symbols, or truncated uncertainty intervals.",
+  "minimum_base_font_pt": 8,
+  "all_27_direct_points_retained": true,
+  "n160_lambda025_G_deviation_annotated": true,
+  "conditional_interval_note_on_figure": true,
+  "M_E_scaled_to_percentage_points": true,
+  "source_csv_sha256": "17fdcce4278a93d376dd0a1773ddc3c8889bb5d8bdd8eec2caf3706a74a3f971",
+  "exports": [
+    "supplement/S4_interaction_times.pdf",
+    "supplement/S4_interaction_times.png",
+    "supplement/S4_interaction_times.svg"
+  ],
+  "report": "report/interaction_findings.md",
+  "new_simulations_performed": false
+}

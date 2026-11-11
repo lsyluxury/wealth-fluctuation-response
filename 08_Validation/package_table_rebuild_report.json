@@ -1,0 +1,141 @@
+{
+  "status": "PASS",
+  "main_tables": 32,
+  "results": {
+    "Fig1_b_lorenz.csv": {
+      "rows": 1001,
+      "max_abs_error": 0.0
+    },
+    "Fig1_c_selection.csv": {
+      "rows": 256,
+      "max_abs_error": 0.0
+    },
+    "Fig1_d_full_redraw.csv": {
+      "rows": 56,
+      "max_abs_error": 0.0
+    },
+    "Fig2_a_generated_Q_curve.csv": {
+      "rows": 321,
+      "max_abs_error": 0.0
+    },
+    "Fig2_a_generated_Q_enumeration.csv": {
+      "rows": 4,
+      "max_abs_error": 1.387778780781446e-17
+    },
+    "Fig2_a_marginal.csv": {
+      "rows": 54,
+      "max_abs_error": 0.0
+    },
+    "Fig2_b_finiteN_inset.csv": {
+      "rows": 6,
+      "max_abs_error": 0.0
+    },
+    "Fig2_b_response_parity.csv": {
+      "rows": 12,
+      "max_abs_error": 0.0
+    },
+    "Fig2_c_matched_full_memory.csv": {
+      "rows": 122,
+      "max_abs_error": 0.0
+    },
+    "Fig2_c_response.csv": {
+      "rows": 6,
+      "max_abs_error": 0.0
+    },
+    "Fig2_d_matched_lag1_memory.csv": {
+      "rows": 122,
+      "max_abs_error": 0.0
+    },
+    "Fig2_d_response.csv": {
+      "rows": 6,
+      "max_abs_error": 0.0
+    },
+    "Fig2_e_neutral_path_parity.csv": {
+      "rows": 16,
+      "max_abs_error": 1.0061396160665481e-16
+    },
+    "Fig2_f_higher_order.csv": {
+      "rows": 8,
+      "max_abs_error": 0.0
+    },
+    "Fig3_a_multilambda.csv": {
+      "rows": 220,
+      "max_abs_error": 0.0
+    },
+    "Fig3_b_multilambda.csv": {
+      "rows": 190,
+      "max_abs_error": 0.0
+    },
+    "Fig3_c_multilambda.csv": {
+      "rows": 190,
+      "max_abs_error": 3.552713678800501e-15
+    },
+    "Fig3_d_theory_abm.csv": {
+      "rows": 255,
+      "max_abs_error": 0.0
+    },
+    "Fig3_e_overlap_ABM.csv": {
+      "rows": 21,
+      "max_abs_error": 0.0
+    },
+    "Fig3_e_overlap_theory.csv": {
+      "rows": 24,
+      "max_abs_error": 0.0
+    },
+    "Fig3_f_waiting_response.csv": {
+      "rows": 24,
+      "max_abs_error": 0.0
+    },
+    "Fig3_g_retagged_entry.csv": {
+      "rows": 6,
+      "max_abs_error": 8.881784197001252e-15
+    },
+    "Fig3_h_composition.csv": {
+      "rows": 3,
+      "max_abs_error": 0.0
+    },
+    "Fig4_a_ratio_map.csv": {
+      "rows": 1604,
+      "max_abs_error": 9.992007221626409e-15
+    },
+    "Fig4_b_late_intervention.csv": {
+      "rows": 20,
+      "max_abs_error": 0.0
+    },
+    "Fig4_c_late_intervention.csv": {
+      "rows": 20,
+      "max_abs_error": 0.0
+    },
+    "Fig4_de_joint42.csv": {
+      "rows": 42,
+      "max_abs_error": 0.0
+    },
+    "Fig4_f_interaction.csv": {
+      "rows": 12,
+      "max_abs_error": 0.0
+    },
+    "Fig4_g_validated_endpoint.csv": {
+      "rows": 42,
+      "max_abs_error": 0.0
+    },
+    "Fig4_h_validated_endpoint.csv": {
+      "rows": 42,
+      "max_abs_error": 0.0
+    },
+    "Fig4_i_validated_endpoint.csv": {
+      "rows": 42,
+      "max_abs_error": 0.0
+    },
+    "Fig4_SI_all_precision_checks.csv": {
+      "rows": 630,
+      "max_abs_error": 2.0014372104082412e-16
+    }
+  },
+  "scope": [
+    "Prepared-root means and intervals, paired contrasts, current 2e path covariances, first-round enumeration and advantage covariance were recomputed.",
+    "Fig3d/e deterministic theory checkpoints are archived inputs, not new kinetic solves.",
+    "Fig1d uses archived six-root CI summary; Fig2f preserves archived bootstrap intervals and independently checks the mean.",
+    "Fig4 final validation was recomputed from all archived 96-future files and theory/grid-refinement files, not resimulated.",
+    "CSV output equals archived main tables within stated floating-point tolerances; no plotting data were silently replaced."
+  ]
+}

@@ -1,0 +1,39 @@
+path,purpose,top_level_symbols,bytes
+packages/Fig1/code/audit_fig1_v5.py,"Independent checks on Fig. 1 data provenance, endpoints and output files.",,2970
+packages/Fig1/code/plot_fig1_v5.py,Recreate paper Fig. 1 (revision v5) from archived CSVs and author-approved figure artwork.,rect; bottom_rect; ftext; artwork; boxed; panel_letter,8341
+packages/Fig1/code/prepare_fig1_data.py,Rebuild journal Fig. 1 numeric inputs from archived ORIGINAL files.,,4345
+packages/Fig2/code/audit_fig2_archived.py,"Audit sources, exact controls, root statistics, control matches and outputs.",check; main,5185
+packages/Fig2/code/audit_fig2_final.py,Scientific consistency and file-integrity audit for final Fig.2 (including new e).,,2573
+packages/Fig2/code/deps/engine_stage01.py,Stage 0 extension of the archived Numba Yard-Sale engine.,advance_trace; initialize_process_score; top_membership; cohort_overlap,5561
+packages/Fig2/code/deps/legacy_engine.py,"Finite-stake, complete-pairing Yard-Sale engine with passive budget recording.",logistic; initialise; reseed; neutral_round; gini_numba; advance_chunk; _NumbaRNGState; rng_state; restore_rng,5816
+packages/Fig2/code/deps/stage2_abm.py,Finite-N weak-selection process comparisons against the archived Yard-Sale rules.,summary_all; prepare; one,3885
+packages/Fig2/code/first_round_exact.py,"Standalone first-round exact control, matching archived exact_controls.py.",gini; analytic_delta_q; enumerate_first_round,1767
+packages/Fig2/code/plot_fig2.py,Updated reader-facing Fig. 2.,main,12778
+packages/Fig2/code/plot_panel_e_standalone.py,Standalone Fig. 2e image; all values read from supplied CSV.,,2352
+packages/Fig2/code/prepare_fig2_data.py,Prepare reproducible Fig.2 data: exact controls + archived Stage 1-3 results.,save; ci_stats; gaussian_cov,6883
+packages/Fig2/code/prepare_initial_state.py,Rebuild the exact fixed initial wealth vector used for Fig. 2e.,,672
+packages/Fig2/code/recompute_panel_e.py,,neutral_checkpoints; run_direct; run_neutral; summarize; main,7734
+packages/Fig2/source/exact_controls_original.py,Independent finite-population enumeration and analytic-control checks.,discrete_gini; enumerate_trade; first_and_second_law; atomic_two_round; main,7574
+packages/Fig3/code/plot_fig3_modified_v8.py,,frame,8565
+packages/Fig4/code/analyze_refinement.py,Resolution-only selection: never select a theory by its distance to ABM.,,4438
+packages/Fig4/code/analyze_validation.py,Reproduce all acceptance decisions; no condition or outlier is omitted.,load; stats; main,4790
+packages/Fig4/code/audit_package.py,"Completeness, archived replay, data provenance, and numerical-integrity audit.",load; main,2712
+packages/Fig4/code/audit_solver.py,,,1183
+packages/Fig4/code/common.py,Stage-four cohorts and diagnostics; development inputs only.,make_initial; relabel_t10; gini; measure; corr_u; mode_vectors; dump_json,3497
+packages/Fig4/code/density_solver.py,"Independent, deterministic, finite-stake density solver.",Settings; wealth_grid; probability_kernel; ability_kernel; make_trade_plan; interval_sum; trade; tax_map; projected_initial; top_fractions; relabel; observables; DensitySolver; cohort_aligned_grid; relabel_resolved,16019
+packages/Fig4/code/engine_stage3.py,Stage 0 extension of the archived Numba Yard-Sale engine.,advance_trace; initialize_process_score; top_membership; cohort_overlap,6126
+packages/Fig4/code/fast_solver.py,"Accelerated, numerically audited original finite-stake operator.",trade_fast; FastSolver,4531
+packages/Fig4/code/legacy_engine.py,"Finite-stake, complete-pairing Yard-Sale engine with passive budget recording.",logistic; initialise; reseed; neutral_round; gini_numba; advance_chunk; _NumbaRNGState; rng_state; restore_rng,5816
+packages/Fig4/code/plot_fig4.py,"Fig.4: redistribution mechanism, late intervention and joint outcomes.",axbox,11607
+packages/Fig4/code/plot_validation_SI.py,,,3334
+packages/Fig4/code/prepare_science_panels.py,Derive Fig.4 plot tables exclusively from the archived Stage 5 ABM root data.,save; ci,3579
+packages/Fig4/code/refine_neutral.py,"Exact score integration at lambda=0, wealth-grid refinement, bounded memory.",,645
+packages/Fig4/code/refine_selected.py,Grid halving for all positive-tax weak-selection conditions and the Stage-6 reference.,,883
+packages/Fig4/code/run_conditional_abm.py,Fixed archived initial states; multiple independent conditional futures.,advance_grid; future; main,4220
+packages/Fig4/code/run_theory_grid.py,42 conditions x 6 matched archive initial states x two wealth/score grids.,run_root_grid; main,5436
+packages/Fig4/code/write_report.py,,table_rows,9925
+scripts/build_plot_tables.py,Export every numeric table used by final main figures and full Markdown lists.,emit,6471
+scripts/check_handoff.py,Audit current figure inputs and key mathematical/representation invariants.,,6243
+scripts/recompute_fig3d.py,Handoff addition: reconstruct final Fig3d theory; preserve approved data by default.,main,2932
+scripts/replot_all.py,"Rebuild four current figures from archived numerical data, not new simulations.",main,2097
+scripts/verify_two_round_exact.py,Independently re-enumerate the finite-N two-round Gini coefficient.,matchings; integrate; main,2106

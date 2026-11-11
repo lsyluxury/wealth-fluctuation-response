@@ -1,0 +1,13 @@
+{
+  "quantity": "sum_{d>20} [C_Mixed(d)-C_Gaussian(d)] K_G(80,d) / sum_{d>=1} [C_Mixed(d)-C_Gaussian(d)] K_G(80,d)",
+  "n_paths": 16000,
+  "ratio": 0.7413666958041324,
+  "ratio_se": 0.032145987627546,
+  "ci_low": 0.6783569509666793,
+  "ci_high": 0.8043764406415855,
+  "independent_check": "full2x2 covariance matrix of centered path products and analytic ratio gradient; agrees with direct influence formula to numerical precision",
+  "interpretation": "late-lag share of the PROCESS-WEIGHTED RESPONSE DIFFERENCE, not the share of the bare kernel tail",
+  "total_coefficient_difference": 0.010499574698740884,
+  "tail_coefficient_difference": 0.007784035001754197,
+  "total_signal_to_se": 10.931330029945697
+}

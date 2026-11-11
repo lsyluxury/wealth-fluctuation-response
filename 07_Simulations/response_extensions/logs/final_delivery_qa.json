@@ -1,0 +1,63 @@
+{
+  "interaction_raw_prediction_max_error": 2.498001805406602e-16,
+  "interaction_raw_direct_max_error": 5.551115123125783e-17,
+  "interaction_samples": {
+    "neutral": 32000,
+    "direct": 6000
+  },
+  "kernel_tail_ratio": 0.7413666958041326,
+  "kernel_ratio_max_error": 2.220446049250313e-16,
+  "kernel_paths": 16000,
+  "archived_late_M_is_percent_max": 9.132,
+  "pdf_geometry": [
+    {
+      "file": "YardSale_Revised_Figures.pdf",
+      "page": 1,
+      "width_mm": 179.99999983333333,
+      "height_mm": 194.30999999999997
+    },
+    {
+      "file": "YardSale_Revised_Figures.pdf",
+      "page": 2,
+      "width_mm": 179.99999983333333,
+      "height_mm": 209.54999999999998
+    },
+    {
+      "file": "YardSale_Revised_Figures.pdf",
+      "page": 3,
+      "width_mm": 179.99999983333333,
+      "height_mm": 161.54399999999998
+    },
+    {
+      "file": "YardSale_Revised_Figures.pdf",
+      "page": 4,
+      "width_mm": 179.99999983333333,
+      "height_mm": 195.57999999999998
+    },
+    {
+      "file": "YardSale_Supplementary_Figures.pdf",
+      "page": 1,
+      "width_mm": 179.99999983333333,
+      "height_mm": 234.9999999
+    },
+    {
+      "file": "YardSale_Supplementary_Figures.pdf",
+      "page": 2,
+      "width_mm": 179.99999983333333,
+      "height_mm": 144.77999999999997
+    },
+    {
+      "file": "YardSale_Supplementary_Figures.pdf",
+      "page": 3,
+      "width_mm": 179.99999983333333,
+      "height_mm": 179.99999983333333
+    },
+    {
+      "file": "YardSale_Supplementary_Figures.pdf",
+      "page": 4,
+      "width_mm": 179.99999983333333,
+      "height_mm": 210.0000001583333
+    }
+  ],
+  "passed": true
+}

@@ -1,0 +1,28 @@
+{
+  "stageA_at_t30": {
+    "0.0": {
+      "E": 47.74575,
+      "G": 0.8015885432517184,
+      "M": 0.37544999999999573
+    },
+    "4.0": {
+      "E": 67.70824999999999,
+      "G": 0.8436249006727099,
+      "M": 3.3917999999999955
+    }
+  },
+  "stageA_N": 100000,
+  "stageA_n_roots": 40,
+  "stageA_n_rounds": 300,
+  "full_redraw_n_roots": 6,
+  "full_redraw_future_per_root": 16,
+  "max_95ci_relative_equivalence_bound": 0.8679415543203001,
+  "redraw_all_95ci_inside_original_equivalence_margin": true,
+  "lorenz_start_Gini_derived": 0.6505191345007135,
+  "source_filenames": [
+    "original_approved_Fig1_art.png",
+    "original_initial_lorenz_6seeds.csv",
+    "original_Fig2_stageA_40seeds.csv",
+    "original_SI_full_redraw_equivalence.csv"
+  ]
+}

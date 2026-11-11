@@ -1,0 +1,26 @@
+[
+  {
+    "mode": 0,
+    "N": 100000,
+    "rounds": 20,
+    "all_array_equal": true,
+    "max_w_error": 0.0,
+    "max_u_error": 0.0
+  },
+  {
+    "mode": 1,
+    "N": 100000,
+    "rounds": 20,
+    "all_array_equal": true,
+    "max_w_error": 0.0,
+    "max_u_error": 0.0
+  },
+  {
+    "mode": 2,
+    "N": 100000,
+    "rounds": 20,
+    "all_array_equal": true,
+    "max_w_error": 0.0,
+    "max_u_error": 0.0
+  }
+]

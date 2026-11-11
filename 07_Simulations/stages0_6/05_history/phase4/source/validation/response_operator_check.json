@@ -1,0 +1,26 @@
+{
+  "purpose": "Signed Taylor recurrence checked with nonzero derivative masses, including intrinsic partner normalization.",
+  "checks": [
+    {
+      "delta": 0.01,
+      "order0_max_abs": 0.0,
+      "order1_max_abs": 7.971458125749856e-10,
+      "order2_max_abs": 4.359877198749026e-11,
+      "relative_L1_order2": 4.271673244486768e-07
+    },
+    {
+      "delta": 0.005,
+      "order0_max_abs": 0.0,
+      "order1_max_abs": 1.992904468295538e-10,
+      "order2_max_abs": 1.0899234465327448e-11,
+      "relative_L1_order2": 1.0683452149102258e-07
+    },
+    {
+      "delta": 0.0025,
+      "order0_max_abs": 0.0,
+      "order1_max_abs": 4.9822878604082e-11,
+      "order2_max_abs": 2.7091712543719478e-12,
+      "relative_L1_order2": 2.7158947815512997e-08
+    }
+  ]
+}

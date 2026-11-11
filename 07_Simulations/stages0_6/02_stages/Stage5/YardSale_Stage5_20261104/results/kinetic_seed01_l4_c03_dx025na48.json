@@ -1,0 +1,15 @@
+{
+  "seed": 2026101201,
+  "lam": 4.0,
+  "chi": 0.03,
+  "dx": 0.025,
+  "na": 48,
+  "steps": 300,
+  "elapsed": 9.26814953600001,
+  "max_mass_error": 3.1308289294429414e-14,
+  "max_mean_error": 3.008704396734174e-14,
+  "min_mass": 0.0,
+  "max_cohort_error": 1.5654144647214707e-14,
+  "grid_nodes": 2526,
+  "ability_bins": 48
+}

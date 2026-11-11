@@ -1,0 +1,74 @@
+{
+  "stage": "4 development mechanism validation",
+  "date": "2026-10-14",
+  "main_metrics": [
+    "G",
+    "M_B50_to_T10",
+    "E_T10"
+  ],
+  "amendment": "Top10 selected after development-tail comparison; before any 40-seed holdout access. Top1 retained as tail robustness.",
+  "model": {
+    "N": 100000,
+    "epsilon": 0.14,
+    "r": 10,
+    "h": 0.3,
+    "mu": 1
+  },
+  "density_initial_seed": 2026101201,
+  "ABM_initial_seeds": [
+    2026101201,
+    2026101202,
+    2026101203,
+    2026101204,
+    2026101205,
+    2026101206
+  ],
+  "T_rounds": 300,
+  "wealth_dx": [
+    0.01,
+    0.005
+  ],
+  "ability_bins": [
+    96,
+    192
+  ],
+  "weak_selection_lambdas": [
+    0.1,
+    0.25,
+    0.5
+  ],
+  "weak_selection_initialization": "same empirical wealth and B50/M40/T10 marginals, factorized uniform ability; NOT the frozen empirical joint sample",
+  "holdout_read": false,
+  "reset_equivalence_bounds": {
+    "G": 0.001,
+    "M": 0.001,
+    "E": 0.002
+  },
+  "reset_equivalence": "90% paired CI (TOST), separately by predeclared time and lambda; not a simultaneous all-times bound",
+  "protocol_status": "frozen before new results",
+  "threads_per_job": 1,
+  "planned_persistence_slices": [
+    [
+      1,
+      0.0
+    ],
+    [
+      1,
+      0.3
+    ],
+    [
+      1,
+      0.9
+    ],
+    [
+      0,
+      0.3
+    ],
+    [
+      5,
+      0.3
+    ]
+  ],
+  "ABM_reset_future_replicates_per_root": 4,
+  "notes": "Failure conditions are retained. Numerical mechanisms are evaluated on development conditions, not called blind validation."
+}

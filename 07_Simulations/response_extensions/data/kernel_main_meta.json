@@ -1,0 +1,684 @@
+{
+  "model": "neutral fair-coin pairwise Yard-Sale",
+  "chi": 0.0,
+  "N": 1000,
+  "epsilon": 0.14,
+  "rounds_per_time": 10.0,
+  "checkpoints": [
+    40,
+    80,
+    160,
+    300
+  ],
+  "reps": 16000,
+  "workers": 2,
+  "seed_base": 202611070910000,
+  "rng": "xoshiro256++ seeded by splitmix64; seed=seed_base+path_id",
+  "matching": "unbiased Fisher-Yates random permutation, sequential disjoint pairs each round",
+  "initial_file": "inputs/w0_fixed.npy",
+  "initial_sha256": "00c9de502b80ba6c540c6ad11516e6e55c742f9dd4e44a5b83898e8a58f1f86a",
+  "X_order": [
+    "G",
+    "M",
+    "E"
+  ],
+  "M_definition": "initial bottom50% entering current top10%, divided by bottom cohort size",
+  "E_definition": "fraction of initial top10% absent from current top10%",
+  "S_definition": "S_d=sum_i sum_{k=0}^{n-1-d} sigma[i,k]*sigma[i,k+d]; includes S0=N*n",
+  "fft": "real FFT per individual with zero padding to next_fast_len(2*n-1), sum power before inverse, rounded to exact integer",
+  "compile": [
+    "g++",
+    "-O3",
+    "-std=c++17",
+    "-shared",
+    "-fPIC",
+    "/workspace/scratch/6033a61e8e59/ys_revision_20261107/logs/kernel_native.cpp",
+    "-o",
+    "/workspace/scratch/6033a61e8e59/ys_revision_20261107/logs/kernel_native.so"
+  ],
+  "path_blocks": [
+    {
+      "start": 250,
+      "stop": 500,
+      "paths": 250,
+      "seconds": 2.529543876647949,
+      "file": "/workspace/scratch/6033a61e8e59/ys_revision_20261107/data/kernel_main_raw/kernel_raw_000250_000500.npz",
+      "max_fft_rounding_error": 5.820766091346741e-11,
+      "max_total_wealth_drift": 1.9326762412674725e-12,
+      "min_wealth": 5.2471314489686765e-09
+    },
+    {
+      "start": 0,
+      "stop": 250,
+      "paths": 250,
+      "seconds": 2.6117570400238037,
+      "file": "/workspace/scratch/6033a61e8e59/ys_revision_20261107/data/kernel_main_raw/kernel_raw_000000_000250.npz",
+      "max_fft_rounding_error": 5.820766091346741e-11,
+      "max_total_wealth_drift": 2.0463630789890885e-12,
+      "min_wealth": 3.751017570999833e-09
+    },
+    {
+      "start": 750,
+      "stop": 1000,
+      "paths": 250,
+      "seconds": 2.691222667694092,
+      "file": "/workspace/scratch/6033a61e8e59/ys_revision_20261107/data/kernel_main_raw/kernel_raw_000750_001000.npz",
+      "max_fft_rounding_error": 5.820766091346741e-11,
+      "max_total_wealth_drift": 1.9326762412674725e-12,
+      "min_wealth": 6.344551102009512e-09
+    },
+    {
+      "start": 500,
+      "stop": 750,
+      "paths": 250,
+      "seconds": 2.948873996734619,
+      "file": "/workspace/scratch/6033a61e8e59/ys_revision_20261107/data/kernel_main_raw/kernel_raw_000500_000750.npz",
+      "max_fft_rounding_error": 5.820766091346741e-11,
+      "max_total_wealth_drift": 2.1600499167107046e-12,
+      "min_wealth": 3.2178360369517615e-09
+    },
+    {
+      "start": 1000,
+      "stop": 1250,
+      "paths": 250,
+      "seconds": 2.521718740463257,
+      "file": "/workspace/scratch/6033a61e8e59/ys_revision_20261107/data/kernel_main_raw/kernel_raw_001000_001250.npz",
+      "max_fft_rounding_error": 5.820766091346741e-11,
+      "max_total_wealth_drift": 1.8189894035458565e-12,
+      "min_wealth": 5.539511291426094e-09
+    },
+    {
+      "start": 1250,
+      "stop": 1500,
+      "paths": 250,
+      "seconds": 2.4478847980499268,
+      "file": "/workspace/scratch/6033a61e8e59/ys_revision_20261107/data/kernel_main_raw/kernel_raw_001250_001500.npz",
+      "max_fft_rounding_error": 5.820766091346741e-11,
+      "max_total_wealth_drift": 2.0463630789890885e-12,
+      "min_wealth": 9.695515111168949e-09
+    },
+    {
+      "start": 1750,
+      "stop": 2000,
+      "paths": 250,
+      "seconds": 2.6008763313293457,
+      "file": "/workspace/scratch/6033a61e8e59/ys_revision_20261107/data/kernel_main_raw/kernel_raw_001750_002000.npz",
+      "max_fft_rounding_error": 5.820766091346741e-11,
+      "max_total_wealth_drift": 1.9326762412674725e-12,
+      "min_wealth": 6.0799130424754664e-09
+    },
+    {
+      "start": 1500,
+      "stop": 1750,
+      "paths": 250,
+      "seconds": 2.7086374759674072,
+      "file": "/workspace/scratch/6033a61e8e59/ys_revision_20261107/data/kernel_main_raw/kernel_raw_001500_001750.npz",
+      "max_fft_rounding_error": 5.820766091346741e-11,
+      "max_total_wealth_drift": 1.9326762412674725e-12,
+      "min_wealth": 2.7246199637062915e-08
+    },
+    {
+      "start": 2000,
+      "stop": 2250,
+      "paths": 250,
+      "seconds": 3.029798984527588,
+      "file": "/workspace/scratch/6033a61e8e59/ys_revision_20261107/data/kernel_main_raw/kernel_raw_002000_002250.npz",
+      "max_fft_rounding_error": 5.820766091346741e-11,
+      "max_total_wealth_drift": 2.2737367544323206e-12,
+      "min_wealth": 4.599828429168549e-09
+    },
+    {
+      "start": 2250,
+      "stop": 2500,
+      "paths": 250,
+      "seconds": 3.0872724056243896,
+      "file": "/workspace/scratch/6033a61e8e59/ys_revision_20261107/data/kernel_main_raw/kernel_raw_002250_002500.npz",
+      "max_fft_rounding_error": 6.207301339600235e-11,
+      "max_total_wealth_drift": 1.9326762412674725e-12,
+      "min_wealth": 1.2902998661665922e-08
+    },
+    {
+      "start": 2500,
+      "stop": 2750,
+      "paths": 250,
+      "seconds": 3.042894124984741,
+      "file": "/workspace/scratch/6033a61e8e59/ys_revision_20261107/data/kernel_main_raw/kernel_raw_002500_002750.npz",
+      "max_fft_rounding_error": 5.820766091346741e-11,
+      "max_total_wealth_drift": 2.0463630789890885e-12,
+      "min_wealth": 9.695515111168946e-09
+    },
+    {
+      "start": 2750,
+      "stop": 3000,
+      "paths": 250,
+      "seconds": 3.013821840286255,
+      "file": "/workspace/scratch/6033a61e8e59/ys_revision_20261107/data/kernel_main_raw/kernel_raw_002750_003000.npz",
+      "max_fft_rounding_error": 5.820766091346741e-11,
+      "max_total_wealth_drift": 1.9326762412674725e-12,
+      "min_wealth": 5.375027624363122e-09
+    },
+    {
+      "start": 3000,
+      "stop": 3250,
+      "paths": 250,
+      "seconds": 3.0046703815460205,
+      "file": "/workspace/scratch/6033a61e8e59/ys_revision_20261107/data/kernel_main_raw/kernel_raw_003000_003250.npz",
+      "max_fft_rounding_error": 5.820766091346741e-11,
+      "max_total_wealth_drift": 2.0463630789890885e-12,
+      "min_wealth": 1.95896420345506e-08
+    },
+    {
+      "start": 3250,
+      "stop": 3500,
+      "paths": 250,
+      "seconds": 3.0050487518310547,
+      "file": "/workspace/scratch/6033a61e8e59/ys_revision_20261107/data/kernel_main_raw/kernel_raw_003250_003500.npz",
+      "max_fft_rounding_error": 5.820766091346741e-11,
+      "max_total_wealth_drift": 1.9326762412674725e-12,
+      "min_wealth": 1.4778151008520619e-08
+    },
+    {
+      "start": 3500,
+      "stop": 3750,
+      "paths": 250,
+      "seconds": 3.1033895015716553,
+      "file": "/workspace/scratch/6033a61e8e59/ys_revision_20261107/data/kernel_main_raw/kernel_raw_003500_003750.npz",
+      "max_fft_rounding_error": 5.820766091346741e-11,
+      "max_total_wealth_drift": 2.0463630789890885e-12,
+      "min_wealth": 1.1841603654091062e-10
+    },
+    {
+      "start": 3750,
+      "stop": 4000,
+      "paths": 250,
+      "seconds": 3.143105983734131,
+      "file": "/workspace/scratch/6033a61e8e59/ys_revision_20261107/data/kernel_main_raw/kernel_raw_003750_004000.npz",
+      "max_fft_rounding_error": 6.207301339600235e-11,
+      "max_total_wealth_drift": 1.8189894035458565e-12,
+      "min_wealth": 3.4356129266870104e-09
+    },
+    {
+      "start": 4000,
+      "stop": 4250,
+      "paths": 250,
+      "seconds": 3.232281446456909,
+      "file": "/workspace/scratch/6033a61e8e59/ys_revision_20261107/data/kernel_main_raw/kernel_raw_004000_004250.npz",
+      "max_fft_rounding_error": 5.829292604175862e-11,
+      "max_total_wealth_drift": 1.8189894035458565e-12,
+      "min_wealth": 2.0151688330828866e-09
+    },
+    {
+      "start": 4250,
+      "stop": 4500,
+      "paths": 250,
+      "seconds": 3.2556564807891846,
+      "file": "/workspace/scratch/6033a61e8e59/ys_revision_20261107/data/kernel_main_raw/kernel_raw_004250_004500.npz",
+      "max_fft_rounding_error": 5.820766091346741e-11,
+      "max_total_wealth_drift": 1.8189894035458565e-12,
+      "min_wealth": 1.2770834074286999e-08
+    },
+    {
+      "start": 4750,
+      "stop": 5000,
+      "paths": 250,
+      "seconds": 2.944255828857422,
+      "file": "/workspace/scratch/6033a61e8e59/ys_revision_20261107/data/kernel_main_raw/kernel_raw_004750_005000.npz",
+      "max_fft_rounding_error": 5.820766091346741e-11,
+      "max_total_wealth_drift": 2.0463630789890885e-12,
+      "min_wealth": 4.786240305024727e-09
+    },
+    {
+      "start": 4500,
+      "stop": 4750,
+      "paths": 250,
+      "seconds": 3.0900187492370605,
+      "file": "/workspace/scratch/6033a61e8e59/ys_revision_20261107/data/kernel_main_raw/kernel_raw_004500_004750.npz",
+      "max_fft_rounding_error": 5.820766091346741e-11,
+      "max_total_wealth_drift": 1.9326762412674725e-12,
+      "min_wealth": 2.1611528172372135e-08
+    },
+    {
+      "start": 5000,
+      "stop": 5250,
+      "paths": 250,
+      "seconds": 2.4719061851501465,
+      "file": "/workspace/scratch/6033a61e8e59/ys_revision_20261107/data/kernel_main_raw/kernel_raw_005000_005250.npz",
+      "max_fft_rounding_error": 5.820766091346741e-11,
+      "max_total_wealth_drift": 1.9326762412674725e-12,
+      "min_wealth": 7.314160522460788e-09
+    },
+    {
+      "start": 5250,
+      "stop": 5500,
+      "paths": 250,
+      "seconds": 2.6213395595550537,
+      "file": "/workspace/scratch/6033a61e8e59/ys_revision_20261107/data/kernel_main_raw/kernel_raw_005250_005500.npz",
+      "max_fft_rounding_error": 5.820766091346741e-11,
+      "max_total_wealth_drift": 1.9326762412674725e-12,
+      "min_wealth": 7.3122411789948455e-09
+    },
+    {
+      "start": 5500,
+      "stop": 5750,
+      "paths": 250,
+      "seconds": 3.12850284576416,
+      "file": "/workspace/scratch/6033a61e8e59/ys_revision_20261107/data/kernel_main_raw/kernel_raw_005500_005750.npz",
+      "max_fft_rounding_error": 5.820766091346741e-11,
+      "max_total_wealth_drift": 1.8189894035458565e-12,
+      "min_wealth": 6.999384911694687e-09
+    },
+    {
+      "start": 5750,
+      "stop": 6000,
+      "paths": 250,
+      "seconds": 3.1855485439300537,
+      "file": "/workspace/scratch/6033a61e8e59/ys_revision_20261107/data/kernel_main_raw/kernel_raw_005750_006000.npz",
+      "max_fft_rounding_error": 5.820766091346741e-11,
+      "max_total_wealth_drift": 2.0463630789890885e-12,
+      "min_wealth": 1.4778151008520644e-08
+    },
+    {
+      "start": 6000,
+      "stop": 6250,
+      "paths": 250,
+      "seconds": 3.3318710327148438,
+      "file": "/workspace/scratch/6033a61e8e59/ys_revision_20261107/data/kernel_main_raw/kernel_raw_006000_006250.npz",
+      "max_fft_rounding_error": 5.820766091346741e-11,
+      "max_total_wealth_drift": 2.1600499167107046e-12,
+      "min_wealth": 2.780104295172348e-09
+    },
+    {
+      "start": 6250,
+      "stop": 6500,
+      "paths": 250,
+      "seconds": 3.291233539581299,
+      "file": "/workspace/scratch/6033a61e8e59/ys_revision_20261107/data/kernel_main_raw/kernel_raw_006250_006500.npz",
+      "max_fft_rounding_error": 5.820766091346741e-11,
+      "max_total_wealth_drift": 1.9326762412674725e-12,
+      "min_wealth": 2.723840666048237e-09
+    },
+    {
+      "start": 6500,
+      "stop": 6750,
+      "paths": 250,
+      "seconds": 2.730574369430542,
+      "file": "/workspace/scratch/6033a61e8e59/ys_revision_20261107/data/kernel_main_raw/kernel_raw_006500_006750.npz",
+      "max_fft_rounding_error": 5.820766091346741e-11,
+      "max_total_wealth_drift": 1.8189894035458565e-12,
+      "min_wealth": 2.856302316519122e-08
+    },
+    {
+      "start": 6750,
+      "stop": 7000,
+      "paths": 250,
+      "seconds": 2.557488203048706,
+      "file": "/workspace/scratch/6033a61e8e59/ys_revision_20261107/data/kernel_main_raw/kernel_raw_006750_007000.npz",
+      "max_fft_rounding_error": 5.820766091346741e-11,
+      "max_total_wealth_drift": 2.0463630789890885e-12,
+      "min_wealth": 6.344551102009522e-09
+    },
+    {
+      "start": 7000,
+      "stop": 7250,
+      "paths": 250,
+      "seconds": 2.4748518466949463,
+      "file": "/workspace/scratch/6033a61e8e59/ys_revision_20261107/data/kernel_main_raw/kernel_raw_007000_007250.npz",
+      "max_fft_rounding_error": 6.207301339600235e-11,
+      "max_total_wealth_drift": 2.0463630789890885e-12,
+      "min_wealth": 4.2532714388241796e-10
+    },
+    {
+      "start": 7250,
+      "stop": 7500,
+      "paths": 250,
+      "seconds": 2.686732530593872,
+      "file": "/workspace/scratch/6033a61e8e59/ys_revision_20261107/data/kernel_main_raw/kernel_raw_007250_007500.npz",
+      "max_fft_rounding_error": 6.207301339600235e-11,
+      "max_total_wealth_drift": 1.9326762412674725e-12,
+      "min_wealth": 8.748898959116377e-09
+    },
+    {
+      "start": 7500,
+      "stop": 7750,
+      "paths": 250,
+      "seconds": 2.806480646133423,
+      "file": "/workspace/scratch/6033a61e8e59/ys_revision_20261107/data/kernel_main_raw/kernel_raw_007500_007750.npz",
+      "max_fft_rounding_error": 5.820766091346741e-11,
+      "max_total_wealth_drift": 2.0463630789890885e-12,
+      "min_wealth": 1.1299318003208413e-08
+    },
+    {
+      "start": 7750,
+      "stop": 8000,
+      "paths": 250,
+      "seconds": 2.9043431282043457,
+      "file": "/workspace/scratch/6033a61e8e59/ys_revision_20261107/data/kernel_main_raw/kernel_raw_007750_008000.npz",
+      "max_fft_rounding_error": 5.820766091346741e-11,
+      "max_total_wealth_drift": 1.8189894035458565e-12,
+      "min_wealth": 5.582013803697231e-09
+    },
+    {
+      "start": 8000,
+      "stop": 8250,
+      "paths": 250,
+      "seconds": 3.0025830268859863,
+      "file": "/workspace/scratch/6033a61e8e59/ys_revision_20261107/data/kernel_main_raw/kernel_raw_008000_008250.npz",
+      "max_fft_rounding_error": 5.820766091346741e-11,
+      "max_total_wealth_drift": 2.0463630789890885e-12,
+      "min_wealth": 3.1401130747884068e-09
+    },
+    {
+      "start": 8250,
+      "stop": 8500,
+      "paths": 250,
+      "seconds": 3.017744302749634,
+      "file": "/workspace/scratch/6033a61e8e59/ys_revision_20261107/data/kernel_main_raw/kernel_raw_008250_008500.npz",
+      "max_fft_rounding_error": 5.820766091346741e-11,
+      "max_total_wealth_drift": 1.8189894035458565e-12,
+      "min_wealth": 4.178929570724951e-09
+    },
+    {
+      "start": 8500,
+      "stop": 8750,
+      "paths": 250,
+      "seconds": 2.8774325847625732,
+      "file": "/workspace/scratch/6033a61e8e59/ys_revision_20261107/data/kernel_main_raw/kernel_raw_008500_008750.npz",
+      "max_fft_rounding_error": 5.820766091346741e-11,
+      "max_total_wealth_drift": 2.0463630789890885e-12,
+      "min_wealth": 2.054827169124108e-09
+    },
+    {
+      "start": 8750,
+      "stop": 9000,
+      "paths": 250,
+      "seconds": 2.6009693145751953,
+      "file": "/workspace/scratch/6033a61e8e59/ys_revision_20261107/data/kernel_main_raw/kernel_raw_008750_009000.npz",
+      "max_fft_rounding_error": 5.820766091346741e-11,
+      "max_total_wealth_drift": 1.7053025658242404e-12,
+      "min_wealth": 1.9589642034550607e-08
+    },
+    {
+      "start": 9000,
+      "stop": 9250,
+      "paths": 250,
+      "seconds": 2.6724917888641357,
+      "file": "/workspace/scratch/6033a61e8e59/ys_revision_20261107/data/kernel_main_raw/kernel_raw_009000_009250.npz",
+      "max_fft_rounding_error": 5.820766091346741e-11,
+      "max_total_wealth_drift": 1.9326762412674725e-12,
+      "min_wealth": 1.9347928317690933e-08
+    },
+    {
+      "start": 9250,
+      "stop": 9500,
+      "paths": 250,
+      "seconds": 2.8014986515045166,
+      "file": "/workspace/scratch/6033a61e8e59/ys_revision_20261107/data/kernel_main_raw/kernel_raw_009250_009500.npz",
+      "max_fft_rounding_error": 5.820766091346741e-11,
+      "max_total_wealth_drift": 1.7053025658242404e-12,
+      "min_wealth": 1.6167651711014445e-08
+    },
+    {
+      "start": 9500,
+      "stop": 9750,
+      "paths": 250,
+      "seconds": 2.7774362564086914,
+      "file": "/workspace/scratch/6033a61e8e59/ys_revision_20261107/data/kernel_main_raw/kernel_raw_009500_009750.npz",
+      "max_fft_rounding_error": 5.820766091346741e-11,
+      "max_total_wealth_drift": 1.9326762412674725e-12,
+      "min_wealth": 1.9779143947715092e-09
+    },
+    {
+      "start": 9750,
+      "stop": 10000,
+      "paths": 250,
+      "seconds": 2.777235507965088,
+      "file": "/workspace/scratch/6033a61e8e59/ys_revision_20261107/data/kernel_main_raw/kernel_raw_009750_010000.npz",
+      "max_fft_rounding_error": 5.820766091346741e-11,
+      "max_total_wealth_drift": 2.0463630789890885e-12,
+      "min_wealth": 1.2852194449689071e-08
+    },
+    {
+      "start": 10000,
+      "stop": 10250,
+      "paths": 250,
+      "seconds": 2.6536643505096436,
+      "file": "/workspace/scratch/6033a61e8e59/ys_revision_20261107/data/kernel_main_raw/kernel_raw_010000_010250.npz",
+      "max_fft_rounding_error": 6.207301339600235e-11,
+      "max_total_wealth_drift": 1.8189894035458565e-12,
+      "min_wealth": 5.407190175982531e-09
+    },
+    {
+      "start": 10250,
+      "stop": 10500,
+      "paths": 250,
+      "seconds": 2.5918357372283936,
+      "file": "/workspace/scratch/6033a61e8e59/ys_revision_20261107/data/kernel_main_raw/kernel_raw_010250_010500.npz",
+      "max_fft_rounding_error": 5.820766091346741e-11,
+      "max_total_wealth_drift": 2.0463630789890885e-12,
+      "min_wealth": 1.0179581000061492e-08
+    },
+    {
+      "start": 10500,
+      "stop": 10750,
+      "paths": 250,
+      "seconds": 2.8315012454986572,
+      "file": "/workspace/scratch/6033a61e8e59/ys_revision_20261107/data/kernel_main_raw/kernel_raw_010500_010750.npz",
+      "max_fft_rounding_error": 5.820766091346741e-11,
+      "max_total_wealth_drift": 1.7053025658242404e-12,
+      "min_wealth": 1.2852194449689068e-08
+    },
+    {
+      "start": 10750,
+      "stop": 11000,
+      "paths": 250,
+      "seconds": 2.8753535747528076,
+      "file": "/workspace/scratch/6033a61e8e59/ys_revision_20261107/data/kernel_main_raw/kernel_raw_010750_011000.npz",
+      "max_fft_rounding_error": 5.820766091346741e-11,
+      "max_total_wealth_drift": 2.0463630789890885e-12,
+      "min_wealth": 2.023524456224009e-08
+    },
+    {
+      "start": 11000,
+      "stop": 11250,
+      "paths": 250,
+      "seconds": 2.9673657417297363,
+      "file": "/workspace/scratch/6033a61e8e59/ys_revision_20261107/data/kernel_main_raw/kernel_raw_011000_011250.npz",
+      "max_fft_rounding_error": 5.820766091346741e-11,
+      "max_total_wealth_drift": 1.9326762412674725e-12,
+      "min_wealth": 1.6349736835994324e-08
+    },
+    {
+      "start": 11250,
+      "stop": 11500,
+      "paths": 250,
+      "seconds": 3.4937469959259033,
+      "file": "/workspace/scratch/6033a61e8e59/ys_revision_20261107/data/kernel_main_raw/kernel_raw_011250_011500.npz",
+      "max_fft_rounding_error": 5.820766091346741e-11,
+      "max_total_wealth_drift": 2.1600499167107046e-12,
+      "min_wealth": 1.559130615558362e-08
+    },
+    {
+      "start": 11500,
+      "stop": 11750,
+      "paths": 250,
+      "seconds": 3.2205183506011963,
+      "file": "/workspace/scratch/6033a61e8e59/ys_revision_20261107/data/kernel_main_raw/kernel_raw_011500_011750.npz",
+      "max_fft_rounding_error": 5.820766091346741e-11,
+      "max_total_wealth_drift": 1.8189894035458565e-12,
+      "min_wealth": 2.3285002975009498e-08
+    },
+    {
+      "start": 11750,
+      "stop": 12000,
+      "paths": 250,
+      "seconds": 3.3482255935668945,
+      "file": "/workspace/scratch/6033a61e8e59/ys_revision_20261107/data/kernel_main_raw/kernel_raw_011750_012000.npz",
+      "max_fft_rounding_error": 6.207301339600235e-11,
+      "max_total_wealth_drift": 2.2737367544323206e-12,
+      "min_wealth": 1.7870326485945736e-09
+    },
+    {
+      "start": 12000,
+      "stop": 12250,
+      "paths": 250,
+      "seconds": 2.700543165206909,
+      "file": "/workspace/scratch/6033a61e8e59/ys_revision_20261107/data/kernel_main_raw/kernel_raw_012000_012250.npz",
+      "max_fft_rounding_error": 5.820766091346741e-11,
+      "max_total_wealth_drift": 1.8189894035458565e-12,
+      "min_wealth": 3.7510175709998275e-09
+    },
+    {
+      "start": 12250,
+      "stop": 12500,
+      "paths": 250,
+      "seconds": 2.802475929260254,
+      "file": "/workspace/scratch/6033a61e8e59/ys_revision_20261107/data/kernel_main_raw/kernel_raw_012250_012500.npz",
+      "max_fft_rounding_error": 6.207301339600235e-11,
+      "max_total_wealth_drift": 1.9326762412674725e-12,
+      "min_wealth": 3.970528709756942e-09
+    },
+    {
+      "start": 12500,
+      "stop": 12750,
+      "paths": 250,
+      "seconds": 2.944511651992798,
+      "file": "/workspace/scratch/6033a61e8e59/ys_revision_20261107/data/kernel_main_raw/kernel_raw_012500_012750.npz",
+      "max_fft_rounding_error": 5.820766091346741e-11,
+      "max_total_wealth_drift": 2.0463630789890885e-12,
+      "min_wealth": 4.8096837243638495e-09
+    },
+    {
+      "start": 12750,
+      "stop": 13000,
+      "paths": 250,
+      "seconds": 3.2879810333251953,
+      "file": "/workspace/scratch/6033a61e8e59/ys_revision_20261107/data/kernel_main_raw/kernel_raw_012750_013000.npz",
+      "max_fft_rounding_error": 6.218670023372397e-11,
+      "max_total_wealth_drift": 1.9326762412674725e-12,
+      "min_wealth": 8.306446446435097e-09
+    },
+    {
+      "start": 13000,
+      "stop": 13250,
+      "paths": 250,
+      "seconds": 3.207481622695923,
+      "file": "/workspace/scratch/6033a61e8e59/ys_revision_20261107/data/kernel_main_raw/kernel_raw_013000_013250.npz",
+      "max_fft_rounding_error": 5.820766091346741e-11,
+      "max_total_wealth_drift": 1.9326762412674725e-12,
+      "min_wealth": 3.610672510808127e-09
+    },
+    {
+      "start": 13250,
+      "stop": 13500,
+      "paths": 250,
+      "seconds": 3.234064817428589,
+      "file": "/workspace/scratch/6033a61e8e59/ys_revision_20261107/data/kernel_main_raw/kernel_raw_013250_013500.npz",
+      "max_fft_rounding_error": 5.820766091346741e-11,
+      "max_total_wealth_drift": 2.0463630789890885e-12,
+      "min_wealth": 3.437195369571078e-09
+    },
+    {
+      "start": 13500,
+      "stop": 13750,
+      "paths": 250,
+      "seconds": 3.2188146114349365,
+      "file": "/workspace/scratch/6033a61e8e59/ys_revision_20261107/data/kernel_main_raw/kernel_raw_013500_013750.npz",
+      "max_fft_rounding_error": 5.820766091346741e-11,
+      "max_total_wealth_drift": 1.7053025658242404e-12,
+      "min_wealth": 5.1399089187289464e-09
+    },
+    {
+      "start": 13750,
+      "stop": 14000,
+      "paths": 250,
+      "seconds": 3.1158387660980225,
+      "file": "/workspace/scratch/6033a61e8e59/ys_revision_20261107/data/kernel_main_raw/kernel_raw_013750_014000.npz",
+      "max_fft_rounding_error": 5.820766091346741e-11,
+      "max_total_wealth_drift": 1.8189894035458565e-12,
+      "min_wealth": 2.813608432908016e-09
+    },
+    {
+      "start": 14000,
+      "stop": 14250,
+      "paths": 250,
+      "seconds": 2.905134916305542,
+      "file": "/workspace/scratch/6033a61e8e59/ys_revision_20261107/data/kernel_main_raw/kernel_raw_014000_014250.npz",
+      "max_fft_rounding_error": 6.207301339600235e-11,
+      "max_total_wealth_drift": 2.2737367544323206e-12,
+      "min_wealth": 1.2687525281413528e-08
+    },
+    {
+      "start": 14250,
+      "stop": 14500,
+      "paths": 250,
+      "seconds": 2.681992769241333,
+      "file": "/workspace/scratch/6033a61e8e59/ys_revision_20261107/data/kernel_main_raw/kernel_raw_014250_014500.npz",
+      "max_fft_rounding_error": 5.820766091346741e-11,
+      "max_total_wealth_drift": 1.7053025658242404e-12,
+      "min_wealth": 2.723840666048235e-09
+    },
+    {
+      "start": 14500,
+      "stop": 14750,
+      "paths": 250,
+      "seconds": 2.6052072048187256,
+      "file": "/workspace/scratch/6033a61e8e59/ys_revision_20261107/data/kernel_main_raw/kernel_raw_014500_014750.npz",
+      "max_fft_rounding_error": 5.820766091346741e-11,
+      "max_total_wealth_drift": 1.9326762412674725e-12,
+      "min_wealth": 3.610672510808129e-09
+    },
+    {
+      "start": 14750,
+      "stop": 15000,
+      "paths": 250,
+      "seconds": 2.754025936126709,
+      "file": "/workspace/scratch/6033a61e8e59/ys_revision_20261107/data/kernel_main_raw/kernel_raw_014750_015000.npz",
+      "max_fft_rounding_error": 5.820766091346741e-11,
+      "max_total_wealth_drift": 1.9326762412674725e-12,
+      "min_wealth": 1.348112348939763e-09
+    },
+    {
+      "start": 15000,
+      "stop": 15250,
+      "paths": 250,
+      "seconds": 3.05553936958313,
+      "file": "/workspace/scratch/6033a61e8e59/ys_revision_20261107/data/kernel_main_raw/kernel_raw_015000_015250.npz",
+      "max_fft_rounding_error": 6.207301339600235e-11,
+      "max_total_wealth_drift": 1.9326762412674725e-12,
+      "min_wealth": 8.247900975183657e-09
+    },
+    {
+      "start": 15250,
+      "stop": 15500,
+      "paths": 250,
+      "seconds": 3.10262393951416,
+      "file": "/workspace/scratch/6033a61e8e59/ys_revision_20261107/data/kernel_main_raw/kernel_raw_015250_015500.npz",
+      "max_fft_rounding_error": 5.820766091346741e-11,
+      "max_total_wealth_drift": 1.9326762412674725e-12,
+      "min_wealth": 4.054845400835335e-09
+    },
+    {
+      "start": 15500,
+      "stop": 15750,
+      "paths": 250,
+      "seconds": 2.922576665878296,
+      "file": "/workspace/scratch/6033a61e8e59/ys_revision_20261107/data/kernel_main_raw/kernel_raw_015500_015750.npz",
+      "max_fft_rounding_error": 5.820766091346741e-11,
+      "max_total_wealth_drift": 1.8189894035458565e-12,
+      "min_wealth": 1.4778151008520627e-08
+    },
+    {
+      "start": 15750,
+      "stop": 16000,
+      "paths": 250,
+      "seconds": 3.196047067642212,
+      "file": "/workspace/scratch/6033a61e8e59/ys_revision_20261107/data/kernel_main_raw/kernel_raw_015750_016000.npz",
+      "max_fft_rounding_error": 5.820766091346741e-11,
+      "max_total_wealth_drift": 1.9326762412674725e-12,
+      "min_wealth": 4.1624754712311485e-09
+    }
+  ],
+  "status": "complete",
+  "start_unix": 1794025934.7868872,
+  "elapsed_sec": 93.97615337371826
+}

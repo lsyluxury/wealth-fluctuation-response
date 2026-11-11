@@ -1,0 +1,33 @@
+{
+  "settings": {
+    "dx": 0.01,
+    "na": 96,
+    "xmin": -55.0,
+    "xmax": 8.0,
+    "epsilon": 0.14,
+    "h": 0.3,
+    "mu": 1.0,
+    "r": 10.0,
+    "ability_quadrature": 32,
+    "win_quadrature": 6,
+    "poisson_max": 10,
+    "threads": 4
+  },
+  "kernel": {
+    "poisson_tail": 2.2858449307904117e-19,
+    "ability_quadrature": 32,
+    "latent_gaussian_truncation": 1.523970604832094e-23,
+    "ability_max_symmetrization": 2.636779683484747e-16,
+    "ability_max_diagonal_correction": 1.2656542480726785e-14,
+    "ability_column_error": 5.551115123125783e-16,
+    "ability_stationary_error": 4.440892098500626e-16,
+    "ability_min_entry": 7.861311028366397e-05,
+    "setup_seconds": 3.454113483428955
+  },
+  "elapsed": 20.76857169799996,
+  "max_mass_error": 1.2600032128773364e-10,
+  "max_wealth_error": 2.3819928252066802e-09,
+  "max_tagging_error": 3.061864095599276e-10,
+  "min_density": 0.0,
+  "skipped_mass_total": 2.5200826471629966e-10
+}

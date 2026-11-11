@@ -1,0 +1,630 @@
+{
+  "output": {
+    "size_mm": [
+      192,
+      160
+    ],
+    "pixels": {
+      "600dpi": [
+        4536,
+        3780
+      ],
+      "preview": [
+        1512,
+        1260
+      ]
+    },
+    "output_stem": "/mnt/data/source/figures/Fig2_dense_final",
+    "placements_mm": [
+      [
+        "parameter_colorbar",
+        0,
+        0,
+        192,
+        18
+      ],
+      [
+        "a_time_G",
+        0,
+        18,
+        64,
+        64
+      ],
+      [
+        "b_time_M",
+        64,
+        18,
+        64,
+        64
+      ],
+      [
+        "c_time_E",
+        128,
+        18,
+        64,
+        64
+      ],
+      [
+        "endpoint_row_label",
+        0,
+        82,
+        192,
+        10
+      ],
+      [
+        "d_endpoint_M",
+        0,
+        92,
+        64,
+        64
+      ],
+      [
+        "e_endpoint_E",
+        64,
+        92,
+        64,
+        64
+      ],
+      [
+        "f_newcomer_origins",
+        128,
+        92,
+        64,
+        64
+      ],
+      [
+        "uncertainty_note",
+        0,
+        156,
+        192,
+        4
+      ]
+    ],
+    "separate_panel_canvases": true,
+    "data_rasterized": false,
+    "colorbar_gradient_rasterized": true
+  },
+  "panels": [
+    {
+      "panel": "a_time_G",
+      "all_text_inside_canvas": true,
+      "text_overlap_pairs": [],
+      "series": [
+        {
+          "parameter": 0.0,
+          "observations": 64,
+          "n_seeds": 40,
+          "shade_matches_raw_ci": true
+        },
+        {
+          "parameter": 0.1,
+          "observations": 64,
+          "n_seeds": 40,
+          "shade_matches_raw_ci": true
+        },
+        {
+          "parameter": 0.25,
+          "observations": 64,
+          "n_seeds": 40,
+          "shade_matches_raw_ci": true
+        },
+        {
+          "parameter": 0.5,
+          "observations": 64,
+          "n_seeds": 40,
+          "shade_matches_raw_ci": true
+        },
+        {
+          "parameter": 0.75,
+          "observations": 64,
+          "n_seeds": 40,
+          "shade_matches_raw_ci": true
+        },
+        {
+          "parameter": 1.0,
+          "observations": 64,
+          "n_seeds": 40,
+          "shade_matches_raw_ci": true
+        },
+        {
+          "parameter": 1.25,
+          "observations": 64,
+          "n_seeds": 40,
+          "shade_matches_raw_ci": true
+        },
+        {
+          "parameter": 1.5,
+          "observations": 64,
+          "n_seeds": 40,
+          "shade_matches_raw_ci": true
+        },
+        {
+          "parameter": 1.75,
+          "observations": 64,
+          "n_seeds": 40,
+          "shade_matches_raw_ci": true
+        },
+        {
+          "parameter": 2.0,
+          "observations": 64,
+          "n_seeds": 40,
+          "shade_matches_raw_ci": true
+        },
+        {
+          "parameter": 2.25,
+          "observations": 64,
+          "n_seeds": 40,
+          "shade_matches_raw_ci": true
+        },
+        {
+          "parameter": 2.5,
+          "observations": 64,
+          "n_seeds": 40,
+          "shade_matches_raw_ci": true
+        },
+        {
+          "parameter": 3.0,
+          "observations": 64,
+          "n_seeds": 40,
+          "shade_matches_raw_ci": true
+        },
+        {
+          "parameter": 3.5,
+          "observations": 64,
+          "n_seeds": 40,
+          "shade_matches_raw_ci": true
+        },
+        {
+          "parameter": 4.0,
+          "observations": 64,
+          "n_seeds": 40,
+          "shade_matches_raw_ci": true
+        },
+        {
+          "parameter": 4.5,
+          "observations": 64,
+          "n_seeds": 40,
+          "shade_matches_raw_ci": true
+        },
+        {
+          "parameter": 5.0,
+          "observations": 64,
+          "n_seeds": 40,
+          "shade_matches_raw_ci": true
+        },
+        {
+          "parameter": 5.5,
+          "observations": 64,
+          "n_seeds": 40,
+          "shade_matches_raw_ci": true
+        },
+        {
+          "parameter": 6.0,
+          "observations": 64,
+          "n_seeds": 40,
+          "shade_matches_raw_ci": true
+        },
+        {
+          "parameter": 7.0,
+          "observations": 64,
+          "n_seeds": 40,
+          "shade_matches_raw_ci": true
+        },
+        {
+          "parameter": 8.0,
+          "observations": 64,
+          "n_seeds": 40,
+          "shade_matches_raw_ci": true
+        },
+        {
+          "parameter": 9.0,
+          "observations": 64,
+          "n_seeds": 40,
+          "shade_matches_raw_ci": true
+        },
+        {
+          "parameter": 10.0,
+          "observations": 64,
+          "n_seeds": 40,
+          "shade_matches_raw_ci": true
+        },
+        {
+          "parameter": 11.0,
+          "observations": 64,
+          "n_seeds": 40,
+          "shade_matches_raw_ci": true
+        },
+        {
+          "parameter": 12.0,
+          "observations": 64,
+          "n_seeds": 40,
+          "shade_matches_raw_ci": true
+        }
+      ],
+      "four_spines": true,
+      "ylim": [
+        0.64,
+        0.865
+      ],
+      "all_means_and_ci_inside": true,
+      "line_fitting": false
+    },
+    {
+      "panel": "b_time_M",
+      "all_text_inside_canvas": true,
+      "text_overlap_pairs": [],
+      "series": [
+        {
+          "parameter": 0.0,
+          "observations": 64,
+          "n_seeds": 40,
+          "shade_matches_raw_ci": true
+        },
+        {
+          "parameter": 0.1,
+          "observations": 64,
+          "n_seeds": 40,
+          "shade_matches_raw_ci": true
+        },
+        {
+          "parameter": 0.25,
+          "observations": 64,
+          "n_seeds": 40,
+          "shade_matches_raw_ci": true
+        },
+        {
+          "parameter": 0.5,
+          "observations": 64,
+          "n_seeds": 40,
+          "shade_matches_raw_ci": true
+        },
+        {
+          "parameter": 0.75,
+          "observations": 64,
+          "n_seeds": 40,
+          "shade_matches_raw_ci": true
+        },
+        {
+          "parameter": 1.0,
+          "observations": 64,
+          "n_seeds": 40,
+          "shade_matches_raw_ci": true
+        },
+        {
+          "parameter": 1.25,
+          "observations": 64,
+          "n_seeds": 40,
+          "shade_matches_raw_ci": true
+        },
+        {
+          "parameter": 1.5,
+          "observations": 64,
+          "n_seeds": 40,
+          "shade_matches_raw_ci": true
+        },
+        {
+          "parameter": 1.75,
+          "observations": 64,
+          "n_seeds": 40,
+          "shade_matches_raw_ci": true
+        },
+        {
+          "parameter": 2.0,
+          "observations": 64,
+          "n_seeds": 40,
+          "shade_matches_raw_ci": true
+        },
+        {
+          "parameter": 2.25,
+          "observations": 64,
+          "n_seeds": 40,
+          "shade_matches_raw_ci": true
+        },
+        {
+          "parameter": 2.5,
+          "observations": 64,
+          "n_seeds": 40,
+          "shade_matches_raw_ci": true
+        },
+        {
+          "parameter": 3.0,
+          "observations": 64,
+          "n_seeds": 40,
+          "shade_matches_raw_ci": true
+        },
+        {
+          "parameter": 3.5,
+          "observations": 64,
+          "n_seeds": 40,
+          "shade_matches_raw_ci": true
+        },
+        {
+          "parameter": 4.0,
+          "observations": 64,
+          "n_seeds": 40,
+          "shade_matches_raw_ci": true
+        },
+        {
+          "parameter": 4.5,
+          "observations": 64,
+          "n_seeds": 40,
+          "shade_matches_raw_ci": true
+        },
+        {
+          "parameter": 5.0,
+          "observations": 64,
+          "n_seeds": 40,
+          "shade_matches_raw_ci": true
+        },
+        {
+          "parameter": 5.5,
+          "observations": 64,
+          "n_seeds": 40,
+          "shade_matches_raw_ci": true
+        },
+        {
+          "parameter": 6.0,
+          "observations": 64,
+          "n_seeds": 40,
+          "shade_matches_raw_ci": true
+        },
+        {
+          "parameter": 7.0,
+          "observations": 64,
+          "n_seeds": 40,
+          "shade_matches_raw_ci": true
+        },
+        {
+          "parameter": 8.0,
+          "observations": 64,
+          "n_seeds": 40,
+          "shade_matches_raw_ci": true
+        },
+        {
+          "parameter": 9.0,
+          "observations": 64,
+          "n_seeds": 40,
+          "shade_matches_raw_ci": true
+        },
+        {
+          "parameter": 10.0,
+          "observations": 64,
+          "n_seeds": 40,
+          "shade_matches_raw_ci": true
+        },
+        {
+          "parameter": 11.0,
+          "observations": 64,
+          "n_seeds": 40,
+          "shade_matches_raw_ci": true
+        },
+        {
+          "parameter": 12.0,
+          "observations": 64,
+          "n_seeds": 40,
+          "shade_matches_raw_ci": true
+        }
+      ],
+      "four_spines": true,
+      "ylim": [
+        -0.13,
+        4.17
+      ],
+      "all_means_and_ci_inside": true,
+      "line_fitting": false
+    },
+    {
+      "panel": "c_time_E",
+      "all_text_inside_canvas": true,
+      "text_overlap_pairs": [],
+      "series": [
+        {
+          "parameter": 0.0,
+          "observations": 64,
+          "n_seeds": 40,
+          "shade_matches_raw_ci": true
+        },
+        {
+          "parameter": 0.1,
+          "observations": 64,
+          "n_seeds": 40,
+          "shade_matches_raw_ci": true
+        },
+        {
+          "parameter": 0.25,
+          "observations": 64,
+          "n_seeds": 40,
+          "shade_matches_raw_ci": true
+        },
+        {
+          "parameter": 0.5,
+          "observations": 64,
+          "n_seeds": 40,
+          "shade_matches_raw_ci": true
+        },
+        {
+          "parameter": 0.75,
+          "observations": 64,
+          "n_seeds": 40,
+          "shade_matches_raw_ci": true
+        },
+        {
+          "parameter": 1.0,
+          "observations": 64,
+          "n_seeds": 40,
+          "shade_matches_raw_ci": true
+        },
+        {
+          "parameter": 1.25,
+          "observations": 64,
+          "n_seeds": 40,
+          "shade_matches_raw_ci": true
+        },
+        {
+          "parameter": 1.5,
+          "observations": 64,
+          "n_seeds": 40,
+          "shade_matches_raw_ci": true
+        },
+        {
+          "parameter": 1.75,
+          "observations": 64,
+          "n_seeds": 40,
+          "shade_matches_raw_ci": true
+        },
+        {
+          "parameter": 2.0,
+          "observations": 64,
+          "n_seeds": 40,
+          "shade_matches_raw_ci": true
+        },
+        {
+          "parameter": 2.25,
+          "observations": 64,
+          "n_seeds": 40,
+          "shade_matches_raw_ci": true
+        },
+        {
+          "parameter": 2.5,
+          "observations": 64,
+          "n_seeds": 40,
+          "shade_matches_raw_ci": true
+        },
+        {
+          "parameter": 3.0,
+          "observations": 64,
+          "n_seeds": 40,
+          "shade_matches_raw_ci": true
+        },
+        {
+          "parameter": 3.5,
+          "observations": 64,
+          "n_seeds": 40,
+          "shade_matches_raw_ci": true
+        },
+        {
+          "parameter": 4.0,
+          "observations": 64,
+          "n_seeds": 40,
+          "shade_matches_raw_ci": true
+        },
+        {
+          "parameter": 4.5,
+          "observations": 64,
+          "n_seeds": 40,
+          "shade_matches_raw_ci": true
+        },
+        {
+          "parameter": 5.0,
+          "observations": 64,
+          "n_seeds": 40,
+          "shade_matches_raw_ci": true
+        },
+        {
+          "parameter": 5.5,
+          "observations": 64,
+          "n_seeds": 40,
+          "shade_matches_raw_ci": true
+        },
+        {
+          "parameter": 6.0,
+          "observations": 64,
+          "n_seeds": 40,
+          "shade_matches_raw_ci": true
+        },
+        {
+          "parameter": 7.0,
+          "observations": 64,
+          "n_seeds": 40,
+          "shade_matches_raw_ci": true
+        },
+        {
+          "parameter": 8.0,
+          "observations": 64,
+          "n_seeds": 40,
+          "shade_matches_raw_ci": true
+        },
+        {
+          "parameter": 9.0,
+          "observations": 64,
+          "n_seeds": 40,
+          "shade_matches_raw_ci": true
+        },
+        {
+          "parameter": 10.0,
+          "observations": 64,
+          "n_seeds": 40,
+          "shade_matches_raw_ci": true
+        },
+        {
+          "parameter": 11.0,
+          "observations": 64,
+          "n_seeds": 40,
+          "shade_matches_raw_ci": true
+        },
+        {
+          "parameter": 12.0,
+          "observations": 64,
+          "n_seeds": 40,
+          "shade_matches_raw_ci": true
+        }
+      ],
+      "four_spines": true,
+      "ylim": [
+        -1.5,
+        74
+      ],
+      "all_means_and_ci_inside": true,
+      "line_fitting": false
+    },
+    {
+      "panel": "d_endpoint_M",
+      "all_text_inside_canvas": true,
+      "text_overlap_pairs": [],
+      "points": 25,
+      "four_spines": true,
+      "all_means_and_ci_inside": true,
+      "uncertainty": "marginal 95% mean CIs in both axes, not joint region",
+      "straight_segments_only": true
+    },
+    {
+      "panel": "e_endpoint_E",
+      "all_text_inside_canvas": true,
+      "text_overlap_pairs": [],
+      "points": 25,
+      "four_spines": true,
+      "all_means_and_ci_inside": true,
+      "uncertainty": "marginal 95% mean CIs in both axes, not joint region",
+      "straight_segments_only": true
+    },
+    {
+      "panel": "f_newcomer_origins",
+      "all_text_inside_canvas": true,
+      "text_overlap_pairs": [],
+      "four_spines": true,
+      "points": 25,
+      "newcomer_share": "mean of individual-root ratios",
+      "all_means_and_ci_inside": true,
+      "share_sum_percent": 100
+    },
+    {
+      "panel": "parameter_colorbar",
+      "all_text_inside_canvas": true,
+      "text_overlap_pairs": []
+    },
+    {
+      "panel": "endpoint_row_label",
+      "all_text_inside_canvas": true,
+      "text_overlap_pairs": []
+    },
+    {
+      "panel": "uncertainty_note",
+      "all_text_inside_canvas": true,
+      "text_overlap_pairs": []
+    }
+  ],
+  "theory": false,
+  "numerically_interpolated_samples": false,
+  "CI_factor": 1.0,
+  "all_axes_full_box": true
+}

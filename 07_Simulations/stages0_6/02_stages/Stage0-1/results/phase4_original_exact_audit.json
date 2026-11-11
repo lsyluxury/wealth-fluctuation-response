@@ -1,0 +1,21 @@
+{
+  "positive_Q_counterexample": {
+    "Q": 0.5740000000000001,
+    "lambda_value": 1.373265360835137,
+    "G_before": 0.5037499999999999,
+    "G_fair_expected": 0.5112916666666665,
+    "G_selected_expected": 0.5099116666666665,
+    "selection_extra": -0.0013799999999999368,
+    "outcomes": 12
+  },
+  "first_round_max_law_error": 2.7755575615628914e-17,
+  "first_round_max_Q_error": 2.7755575615628914e-17,
+  "two_round_full_redraw_max_TV": 2.693158196453993e-16,
+  "pure_tax_max_G_error": 1.887379141862766e-15,
+  "pure_tax_changed_order_positions": 23,
+  "pure_tax_max_top10_membership_changes": 0,
+  "pure_tax_max_floating_ties": 25,
+  "pure_tax_rank_note": "Rounding can merge extremely close low-wealth values; entire population argsort need not be bitwise invariant. Top10 membership and the mathematical monotonic mapping are checked separately.",
+  "mode_quadrature_max_error": 7.105427357601002e-15,
+  "equal_wealth_two_round_coefficient": 0.004671771730520653
+}

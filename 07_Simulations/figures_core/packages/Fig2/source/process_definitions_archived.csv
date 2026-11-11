@@ -1,0 +1,7 @@
+internal_id,figure_name,stationary_score_distribution,update_rule,critical_comparison,plotted_panels
+P1,Gaussian renewal,"U(-1,1)","Poisson(0.1) updates/round; on event latent a <- 0.3*a + sqrt(1-0.3^2)*Gaussian; score u=2Phi(a)-1","Same C_u(1) with mixed redraw rates; different long-lag C_u(d)",b;c
+P2,Uniform redraw,"U(-1,1)","Each round: redraw U(-1,1) with probability 0.10; else retain","Same full C_u(d) with two-state flips; same P(u) and full C_u(d) with redraw plus flips",b;c;d
+P3,Two-state flips,"u=+-1/sqrt(3)","Each round: flip sign with probability 0.05; else retain","Same full C_u(d) with uniform redraw, different stationary P(u)",b;c
+P4,Half-fixed and fast-redraw,"U(-1,1)","Half of individuals fixed; other half redraw at increased rate","Supplementary-only control",SI
+P5,Mixed redraw rates,"U(-1,1)","Half redraw with probability 0.01/round; half with probability 0.1274996423/round","Same C_u(1) as Gaussian renewal, different long-lag C_u(d)",b;c
+P7,Redraw plus sign flips,"U(-1,1)","Each round: retain 0.925, redraw 0.05, flip sign 0.025","Same P(u) and full C_u(d) with uniform redraw, different higher-order time statistics",d

@@ -1,0 +1,25 @@
+{
+  "n": 100000,
+  "rounds": 300,
+  "lambda": 4,
+  "chi": 0,
+  "elapsed_s": 2.421474869000008,
+  "w_exact_equal": true,
+  "a_exact_equal": true,
+  "u_exact_equal": true,
+  "w_max_abs_diff": 0.0,
+  "a_max_abs_diff": 0.0,
+  "u_max_abs_diff": 0.0,
+  "total_wealth_abs_error": 0.0,
+  "min_wealth": 3.217327359679921e-16,
+  "gini": 0.8432304714797618,
+  "end_Q": 0.09286415864268369,
+  "max_budget_trade_Q": 0.014669779945767463,
+  "original_record_errors": {
+    "gini": 0.0,
+    "Q": 1.3877787807814457e-17,
+    "B50_T10": 0.0,
+    "Etop10": 0.0,
+    "rho_s": 5.551115123125783e-17
+  }
+}

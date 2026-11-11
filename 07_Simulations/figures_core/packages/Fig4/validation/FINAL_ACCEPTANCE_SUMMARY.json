@@ -1,0 +1,46 @@
+{
+  "uniform_fine_baseline_preserved": true,
+  "final_policy": "finest computed spatial resolution per complete condition; no selection by metric/time agreement",
+  "scalar_reduction_max_error": {
+    "G": 1.887379141862766e-15,
+    "M": 1.0061396160665481e-16,
+    "E": 8.881784197001252e-16
+  },
+  "all_time_counts": {
+    "E": {
+      "supported": 168
+    },
+    "G": {
+      "supported": 168
+    },
+    "M": {
+      "supported": 168
+    }
+  },
+  "endpoint_counts": {
+    "E": {
+      "supported": 42
+    },
+    "G": {
+      "supported": 42
+    },
+    "M": {
+      "supported": 42
+    }
+  },
+  "max_mean_abs_error": {
+    "G": 0.00044168226075378775,
+    "M": 0.00015337490280428281,
+    "E": 0.00117829484551768
+  },
+  "max_CI_extent": {
+    "G": 0.0006325975971737806,
+    "M": 0.0004380908868712408,
+    "E": 0.001944948098140443
+  },
+  "all_four_times_supported_conditions": {
+    "G": 42,
+    "M": 42,
+    "E": 42
+  }
+}

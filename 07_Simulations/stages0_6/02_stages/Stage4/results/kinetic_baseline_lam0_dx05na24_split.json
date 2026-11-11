@@ -1,0 +1,59 @@
+{
+  "mode": "baseline",
+  "lam": 0.0,
+  "seed": 2026101201,
+  "dx": 0.05,
+  "na": 24,
+  "rounds": 800,
+  "mass_error": 1.7763568394002505e-14,
+  "mean_wealth_error": 1.6653345369377348e-14,
+  "tag_error": 1.7486012637846216e-15,
+  "min_density": 0.0,
+  "seconds": 23.873657703399658,
+  "quantile_splits": [
+    {
+      "at_round": 300,
+      "quantile": 0.5,
+      "split": true,
+      "fraction": 0.6901632335684214,
+      "added_variance": 3.244285728953855e-09,
+      "wealth": 0.08629358649937088,
+      "delta": 0.0016834351501888334,
+      "mass_error": 0.0,
+      "wealth_error": -1.1102230246251565e-16
+    },
+    {
+      "at_round": 300,
+      "quantile": 0.9,
+      "split": true,
+      "fraction": 0.5647681118806929,
+      "added_variance": 4.5013209453159675e-06,
+      "wealth": 3.1581929096897854,
+      "delta": 0.0616107542973392,
+      "mass_error": 0.0,
+      "wealth_error": 0.0
+    },
+    {
+      "at_round": 500,
+      "quantile": 0.5,
+      "split": true,
+      "fraction": 0.7745269099904706,
+      "added_variance": 2.829514400559674e-10,
+      "wealth": 0.03174563637806808,
+      "delta": 0.0006193011822998307,
+      "mass_error": 0.0,
+      "wealth_error": 0.0
+    },
+    {
+      "at_round": 500,
+      "quantile": 0.9,
+      "split": true,
+      "fraction": 0.5446438224292607,
+      "added_variance": 1.343475362958202e-06,
+      "wealth": 3.0041660239464374,
+      "delta": 0.041935924471265734,
+      "mass_error": 0.0,
+      "wealth_error": 0.0
+    }
+  ]
+}

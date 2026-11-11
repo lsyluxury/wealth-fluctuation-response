@@ -1,0 +1,41 @@
+{
+  "stage": "A",
+  "figure_number": 2,
+  "parameter_column": "lambda_value",
+  "style": "Approved reference: six independently rendered boxed data panels, shared parameter colorbar, fixed physical layout",
+  "width_mm": 192,
+  "height_mm": 160,
+  "header_mm": 18,
+  "cell_width_mm": 64,
+  "cell_height_mm": 64,
+  "mid_mm": 10,
+  "footer_mm": 4,
+  "dpi": 600,
+  "axes_font_pt": 11.0,
+  "tick_font_pt": 10.2,
+  "title_font_pt": 10.8,
+  "panel_letter_pt": 16.0,
+  "colormap_stops": [
+    "#183B65",
+    "#287E8C",
+    "#4AAD96",
+    "#D8B961",
+    "#CB673A"
+  ],
+  "cohort_colors": {
+    "B50": "#318BC0",
+    "M40": "#78B78C"
+  },
+  "primary_conditions": [
+    0,
+    4,
+    12
+  ],
+  "confidence_level": 0.95,
+  "time_range": [
+    0,
+    30
+  ],
+  "theory_in_plot": false,
+  "no_spline": true
+}

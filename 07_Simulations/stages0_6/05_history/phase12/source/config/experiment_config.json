@@ -1,0 +1,240 @@
+{
+  "protocol_version": "1.0",
+  "run_id": "wealth_new_phase12_20261014",
+  "created_utc": "2026-10-14T02:43:57.281502+00:00",
+  "model": {
+    "N": 100000,
+    "epsilon": 0.14,
+    "r": 10,
+    "mu": 1.0,
+    "h": 0.3
+  },
+  "targets": [
+    0.5,
+    0.65,
+    0.8
+  ],
+  "lambdas": [
+    0,
+    0.1,
+    0.25,
+    0.5,
+    0.75,
+    1,
+    1.5,
+    2,
+    3,
+    4,
+    6,
+    8,
+    12,
+    16
+  ],
+  "chis": [
+    0,
+    0.001,
+    0.002,
+    0.003,
+    0.005,
+    0.0075,
+    0.01,
+    0.015,
+    0.02,
+    0.03,
+    0.04,
+    0.06,
+    0.1
+  ],
+  "stage_A": {
+    "chi": 0.0,
+    "rounds": 300
+  },
+  "stage_B": {
+    "lambda_value": 4.0,
+    "anchor_A_round": 300,
+    "rounds": 300
+  },
+  "times": [
+    0,
+    0.1,
+    0.2,
+    0.3,
+    0.5,
+    1,
+    2,
+    3,
+    5,
+    10,
+    15,
+    20,
+    25,
+    30
+  ],
+  "developer_seeds": [
+    2026101201,
+    2026101202,
+    2026101203,
+    2026101204,
+    2026101205,
+    2026101206,
+    2026101207,
+    2026101208,
+    2026101209,
+    2026101210,
+    2026101211,
+    2026101212,
+    2026101213,
+    2026101214,
+    2026101215,
+    2026101216,
+    2026101217,
+    2026101218,
+    2026101219,
+    2026101220
+  ],
+  "holdout_seeds": [
+    2026101401,
+    2026101402,
+    2026101403,
+    2026101404,
+    2026101405,
+    2026101406,
+    2026101407,
+    2026101408,
+    2026101409,
+    2026101410,
+    2026101411,
+    2026101412,
+    2026101413,
+    2026101414,
+    2026101415,
+    2026101416,
+    2026101417,
+    2026101418,
+    2026101419,
+    2026101420,
+    2026101421,
+    2026101422,
+    2026101423,
+    2026101424,
+    2026101425,
+    2026101426,
+    2026101427,
+    2026101428,
+    2026101429,
+    2026101430,
+    2026101431,
+    2026101432,
+    2026101433,
+    2026101434,
+    2026101435,
+    2026101436,
+    2026101437,
+    2026101438,
+    2026101439,
+    2026101440
+  ],
+  "heldout_parameters": {
+    "lambdas": [
+      1.5,
+      6,
+      12
+    ],
+    "chis": [
+      0.0075,
+      0.015,
+      0.06
+    ]
+  },
+  "record": {
+    "budgets_every_round": true,
+    "anchor_every_seed": true,
+    "representative_lambdas": [
+      0,
+      4,
+      16
+    ],
+    "representative_chis": [
+      0,
+      0.01,
+      0.03
+    ],
+    "density_seeds": [
+      2026101201,
+      2026101202,
+      2026101203,
+      2026101204,
+      2026101205,
+      2026101206
+    ],
+    "density_targets": [
+      0.5,
+      0.65,
+      0.8
+    ],
+    "density_times": [
+      0,
+      0.1,
+      0.2,
+      0.3,
+      0.5,
+      1,
+      2,
+      3,
+      5,
+      10,
+      15,
+      20,
+      25,
+      30
+    ],
+    "microstate_seeds": [
+      2026101201,
+      2026101202
+    ],
+    "microstate_times": [
+      0.1,
+      0.2,
+      0.5,
+      1,
+      5,
+      10,
+      20,
+      30
+    ],
+    "microstate_target": 0.65,
+    "endpoint_microstates_other_targets": true,
+    "wealth_edges_description": "0; logarithmic positive edges 1e-40..1e5 in steps 0.25 decades; +infinity",
+    "latent_edges_description": "-infinity; linear -6..6 with spacing 0.25; +infinity"
+  },
+  "long_window": {
+    "enabled": false,
+    "status": "deferred_until_stage3_representative_validation",
+    "planned_times": [
+      50,
+      100
+    ],
+    "reason": "Follow roadmap dependency; main B anchor remains A t=30."
+  },
+  "statistics": {
+    "independent_unit": "root_seed",
+    "paired_controls": {
+      "selection": 0.0,
+      "tax": 0.0
+    },
+    "CI": "two-sided pointwise Student-t 95%; no multiple-comparison guarantee"
+  },
+  "validation_targets": {
+    "gini_absolute": 0.005,
+    "rank_probability_absolute": 0.002,
+    "rare_event_relative": 0.1,
+    "relative_target_min_pooled_event_count": 100,
+    "probability_absolute_near_zero": 0.0002,
+    "wealth_mass_relative": 1e-10,
+    "replay_metric_absolute": 1e-10
+  },
+  "preservation": {
+    "holdout_outcomes": "computed but not summarized/interpreted for theory development; automated structural/numerical QC only",
+    "parameter_holdouts": "excluded from development aggregates even for development seeds"
+  }
+}

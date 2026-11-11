@@ -1,0 +1,213 @@
+{
+  "status": "PASSED",
+  "independent_roots": 60,
+  "development_roots": 20,
+  "heldout_roots": 40,
+  "phase_trajectories": 4860,
+  "snapshot_rows": 68040,
+  "branch_round_budget_rows": 1458000,
+  "common_anchors": 360,
+  "empirical_density_files": 1512,
+  "numerical_columns_per_row": 116,
+  "negative_observations": 0,
+  "zero_observations": 0,
+  "cutoff_ties": 0,
+  "max_errors": {
+    "mass": 5.773159728050814e-15,
+    "Q_budget": 8.798517470154366e-15,
+    "variance_budget": 2.220446049250313e-13,
+    "partition_variance": 5.329070518200751e-15
+  },
+  "density_max_mass_relative_error": 4.107825191113079e-15,
+  "max_wealth_outer_bin_population": 0,
+  "original_pilot_regression": {
+    "old_snapshot_rows": 2160,
+    "numeric_fields": 65,
+    "field_comparisons": 140400,
+    "max_absolute_error": 4.547473508864641e-13,
+    "microstate_arrays": [
+      {
+        "key": "G50_neutral_wealth",
+        "elements": 100000,
+        "array_equal": true
+      },
+      {
+        "key": "G50_neutral_latent",
+        "elements": 100000,
+        "array_equal": true
+      },
+      {
+        "key": "G50_neutral_ability",
+        "elements": 100000,
+        "array_equal": true
+      },
+      {
+        "key": "G50_neutral_permutation",
+        "elements": 100000,
+        "array_equal": true
+      },
+      {
+        "key": "G50_selection_final_wealth",
+        "elements": 300000,
+        "array_equal": true
+      },
+      {
+        "key": "G50_selection_final_latent",
+        "elements": 100000,
+        "array_equal": true
+      },
+      {
+        "key": "G50_selection_final_ability",
+        "elements": 100000,
+        "array_equal": true
+      },
+      {
+        "key": "G50_selection_final_permutation",
+        "elements": 100000,
+        "array_equal": true
+      },
+      {
+        "key": "G50_tax_final_wealth",
+        "elements": 300000,
+        "array_equal": true
+      },
+      {
+        "key": "G50_tax_final_ability",
+        "elements": 100000,
+        "array_equal": true
+      },
+      {
+        "key": "G65_neutral_wealth",
+        "elements": 100000,
+        "array_equal": true
+      },
+      {
+        "key": "G65_neutral_latent",
+        "elements": 100000,
+        "array_equal": true
+      },
+      {
+        "key": "G65_neutral_ability",
+        "elements": 100000,
+        "array_equal": true
+      },
+      {
+        "key": "G65_neutral_permutation",
+        "elements": 100000,
+        "array_equal": true
+      },
+      {
+        "key": "G65_selection_final_wealth",
+        "elements": 300000,
+        "array_equal": true
+      },
+      {
+        "key": "G65_selection_final_latent",
+        "elements": 100000,
+        "array_equal": true
+      },
+      {
+        "key": "G65_selection_final_ability",
+        "elements": 100000,
+        "array_equal": true
+      },
+      {
+        "key": "G65_selection_final_permutation",
+        "elements": 100000,
+        "array_equal": true
+      },
+      {
+        "key": "G65_tax_final_wealth",
+        "elements": 300000,
+        "array_equal": true
+      },
+      {
+        "key": "G65_tax_final_ability",
+        "elements": 100000,
+        "array_equal": true
+      },
+      {
+        "key": "G80_neutral_wealth",
+        "elements": 100000,
+        "array_equal": true
+      },
+      {
+        "key": "G80_neutral_latent",
+        "elements": 100000,
+        "array_equal": true
+      },
+      {
+        "key": "G80_neutral_ability",
+        "elements": 100000,
+        "array_equal": true
+      },
+      {
+        "key": "G80_neutral_permutation",
+        "elements": 100000,
+        "array_equal": true
+      },
+      {
+        "key": "G80_selection_final_wealth",
+        "elements": 300000,
+        "array_equal": true
+      },
+      {
+        "key": "G80_selection_final_latent",
+        "elements": 100000,
+        "array_equal": true
+      },
+      {
+        "key": "G80_selection_final_ability",
+        "elements": 100000,
+        "array_equal": true
+      },
+      {
+        "key": "G80_selection_final_permutation",
+        "elements": 100000,
+        "array_equal": true
+      },
+      {
+        "key": "G80_tax_final_wealth",
+        "elements": 300000,
+        "array_equal": true
+      },
+      {
+        "key": "G80_tax_final_ability",
+        "elements": 100000,
+        "array_equal": true
+      }
+    ],
+    "passed": true
+  },
+  "independent_snapshots": {
+    "snapshot_files": 40,
+    "branch_snapshots": 120,
+    "metric_checks": 12720,
+    "max_absolute_error": 2.2737367544323206e-13,
+    "max_normalized_error": 2.5603847670326215e-15,
+    "passed": true
+  },
+  "production_checkpoint_resume": [
+    {
+      "stage": "selection",
+      "N": 100000,
+      "resume_from_round": 1,
+      "resume_to_round": 5,
+      "exact_equal": true
+    },
+    {
+      "stage": "tax",
+      "N": 100000,
+      "resume_from_round": 1,
+      "resume_to_round": 5,
+      "exact_equal": true
+    }
+  ],
+  "holdout_policy": "Only automatic structural/numerical QA. No holdout outcome means or effects computed here.",
+  "not_done": [
+    "independent_density_dynamics",
+    "analytic_prediction_validation",
+    "time_50_100_extensions",
+    "final_four_figures"
+  ]
+}

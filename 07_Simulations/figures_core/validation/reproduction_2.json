@@ -1,0 +1,12 @@
+[
+  {
+    "figure": 2,
+    "script": "plot_fig2.py",
+    "args": [
+      "--dpi",
+      "600"
+    ],
+    "returncode": 0,
+    "seconds": 15.506860980999988
+  }
+]

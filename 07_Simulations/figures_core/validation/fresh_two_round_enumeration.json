@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "max_absolute_error": 9.566132608274103e-15,
+  "total_enumerated_paths": 697334,
+  "source": "independent symmetry-reduced enumeration of matching and fair second-round outcomes"
+}

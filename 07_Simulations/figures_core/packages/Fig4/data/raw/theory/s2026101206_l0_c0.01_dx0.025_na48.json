@@ -1,0 +1,43 @@
+{
+  "root": 2026101206,
+  "lambda_value": 0.0,
+  "chi": 0.01,
+  "steps": 300,
+  "settings": {
+    "dx": 0.025,
+    "na": 48,
+    "xmin": -55.0,
+    "xmax": 8.0,
+    "epsilon": 0.14,
+    "h": 0.3,
+    "mu": 1.0,
+    "r": 10.0,
+    "ability_quadrature": 32,
+    "win_quadrature": 6,
+    "poisson_max": 12,
+    "threads": 1
+  },
+  "kernel": {
+    "poisson_tail": 1.4635311653951694e-23,
+    "ability_quadrature": 32,
+    "latent_gaussian_truncation": 1.523970604832094e-23,
+    "ability_max_symmetrization": 3.469446951953614e-16,
+    "ability_max_diagonal_correction": 4.440892098500626e-15,
+    "ability_column_error": 6.661338147750939e-16,
+    "ability_stationary_error": 3.3306690738754696e-16,
+    "ability_min_entry": 0.00023758152984999453,
+    "setup_seconds": 0.2984447479248047,
+    "renewal_lowrank": 13,
+    "renewal_reconstruction_max_error": 3.400058012914542e-16,
+    "cutoff": 1e-18
+  },
+  "max_probability_error": 3.708144902248023e-14,
+  "max_mean_wealth_error": 3.574918139293004e-14,
+  "max_tag_mass_error": 1.970645868709653e-14,
+  "min_density": 0.0,
+  "roundoff_clamp_mass": 0.0,
+  "skipped_mass": 7.488048291801258e-15,
+  "overflow_mass": 0.0,
+  "overflow_wealth": 0.0,
+  "elapsed_seconds": 3.1336875039999654
+}

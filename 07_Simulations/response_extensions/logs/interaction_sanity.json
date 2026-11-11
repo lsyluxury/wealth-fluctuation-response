@@ -1,0 +1,15 @@
+{
+  "score_explicit_lag": -5.911592617751236,
+  "score_online": -5.911592617751245,
+  "score_absolute_error": 8.881784197001252e-15,
+  "first_round_A": 0.0,
+  "first_round_gini_affine_error": 8.881784197001252e-16,
+  "first_round_rank_unchanged_error": 0.0,
+  "duplicate_zero_tax_neutral_error": 0.0,
+  "duplicate_zero_tax_direct_error": 0.0,
+  "chi_zero_interaction_exact_zero": true,
+  "seed": 199913,
+  "N": 1000,
+  "rounds": 8,
+  "passed": true
+}

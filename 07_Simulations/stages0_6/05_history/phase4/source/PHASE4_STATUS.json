@@ -1,0 +1,30 @@
+{
+  "stage": 4,
+  "main_metrics": [
+    "G",
+    "M_B50_to_T10",
+    "E_T10"
+  ],
+  "status": "completed_representative_development_validation",
+  "holdout_accessed": false,
+  "full_parameter_universality_tested": false,
+  "all_time_simultaneous_confidence_bands": false,
+  "weak_quadratic_validity": "tested small lambda; lambda=.5 Top10 truncation error exceeds .2 percentage points",
+  "execution_counts": {
+    "new_ABM_branches": 348,
+    "ABM_rounds": 104400,
+    "ABM_metric_rows": 4872,
+    "ABM_preparation_roots": 6,
+    "redraw_future_histories": 96,
+    "redraw_future_histories_per_root": 16,
+    "density_full_trajectories": 24,
+    "density_full_rounds": 7200,
+    "response_recursion_trajectories": 1,
+    "response_recursion_rounds": 300,
+    "early_memory_response_trajectories": 5,
+    "early_memory_response_rounds": 10,
+    "pure_tax_N100000_control_trajectories": 3,
+    "pure_tax_rounds": 900,
+    "budget_rows": 1200
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "changes": [
+    "Recovered only CRC-verified complete ZIP members; excluded incomplete historical tail and unrelated drafts/images/logs.",
+    "Shortened historical directory names, preserving depth; updated matching literal path strings in UTF-8 code/configuration/path metadata.",
+    "Rebuilt Figure 1 with code-drawn vector primitives and exact CSV statistical curves; replaced figure-builder entry point to redraw all four figures.",
+    "Added reproducibility dispatcher, English documentation, citation metadata and tested dependency versions."
+  ],
+  "scientific_data_note": "Canonical scientific CSV values and original numerical result arrays are unchanged. Original source-file hashes and path mappings are recorded separately."
+}

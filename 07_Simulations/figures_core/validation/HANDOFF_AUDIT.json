@@ -1,0 +1,22 @@
+{
+  "plot_table_count": 32,
+  "listed_rows": 5377,
+  "first_round_Q_max_error": 0.0,
+  "two_round_finiteN_max_error": 4.2760933682828295e-16,
+  "fresh_exact_joint_law_max_error": 2.7755575615628914e-17,
+  "pure_redistribution_G_scale_error": 1.1102230246251565e-16,
+  "Fig2e_summary_recalculation_max_error": 9.8879238130678e-17,
+  "Fig2e_actual_comparisons": 16,
+  "Fig2e_distinct_prediction_abscissae": 12,
+  "Fig3h_composition_sum_error": 1.4210854715202004e-14,
+  "Fig3d_recomputed_rows": 255,
+  "Fig3d_recomputed_max_error": 0.0,
+  "Fig4_nonzero_time_tests": 504,
+  "Fig4_supported": 504,
+  "Fig4_t30_points": 126,
+  "Fig4_statistics_unit": "6 initial states;16 futures averaged within initial state;pointwise df5 intervals",
+  "python_programs": 38,
+  "source_data_schema_entries": 832,
+  "status": "PASS",
+  "scope": "Current numerical tables, exact control reruns, Fig2e statistical reconstruction, five-condition Fig3d when present, all-time Fig4 criterion; not a rerun of every historical trajectory"
+}

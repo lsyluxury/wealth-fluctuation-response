@@ -1,0 +1,10 @@
+{
+  "max_probability_error": 8.1601392309949e-14,
+  "max_mean_wealth_error": 8.493206138382448e-14,
+  "max_tag_mass_error": 4.424238753131249e-14,
+  "skipped_mass": 5.206740910797228e-13,
+  "overflow_mass": 0.0,
+  "overflow_wealth": 0.0,
+  "minimum_density": -5e-324,
+  "theory_runs": 648
+}

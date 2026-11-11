@@ -1,0 +1,53 @@
+{
+  "source_files": {
+    "de_joint_endpoint_42.csv": "149430287200ce8534a8b9b073ccc8c36c713bf5db43cdf122172e65ef20c85b",
+    "f_nonadditivity_paired_40roots.csv": "9295b39ee0b7b36059b36d72c137d56398790ad8ea33453e359a2c3ce3821dae",
+    "final_acceptance_all_conditions_times.csv": "566b14c78def6922c305f3207c6f16b758c54e95ec485bc57ef97f6f92c4d999"
+  },
+  "source_only": true,
+  "model_reruns": 0,
+  "endpoint_conditions": 42,
+  "strong_bias_lambda": 4,
+  "nonadditivity_G_units": "Gini index",
+  "nonadditivity_M_units": "percentage points",
+  "max_endpoint_contrast_discrepancy": 1.021405182655144e-14,
+  "validation_times": [
+    5,
+    10,
+    20,
+    30
+  ],
+  "validation_checks": 504,
+  "criterion_contained": 504,
+  "validation_summary": [
+    {
+      "metric": "G",
+      "n": 168,
+      "contained": 168,
+      "max_extent_ratio": 0.12651951943474,
+      "tolerance": 0.005
+    },
+    {
+      "metric": "M",
+      "n": 168,
+      "contained": 168,
+      "max_extent_ratio": 0.21904544343559998,
+      "tolerance": 0.002
+    },
+    {
+      "metric": "E",
+      "n": 168,
+      "contained": 168,
+      "max_extent_ratio": 0.9724740490702,
+      "tolerance": 0.002
+    }
+  ],
+  "statistical_unit": "40 roots for endpoint/nonadditivity; separate 6 roots for validation, after 16 conditional futures are averaged within each root",
+  "CI_scope": "pointwise 95% t intervals; no simultaneous guarantee; discretization error excluded",
+  "protocol": "initial joint intervention; empirical joint states in matched validation; late same-state restart not pooled",
+  "figure_size_mm": [
+    180,
+    180
+  ],
+  "minimum_font_pt": 8
+}

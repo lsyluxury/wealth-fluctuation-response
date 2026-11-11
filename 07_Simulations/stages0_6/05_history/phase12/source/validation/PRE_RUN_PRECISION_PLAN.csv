@@ -1,0 +1,19 @@
+stage,target_G,metric,contrast,n_pilot,paired_mean,paired_sd,halfwidth_95_n20,projected_halfwidth_95_n60,precision_target,label
+selection,0.5,gini,4.0-0,20,0.06972545383934883,0.0007856894905673366,0.0003677140005582411,0.00020296511741746704,0.001,projection assumes same between-root variance; not prospective theory validation
+selection,0.5,B50_T10,4.0-0,20,0.040683,0.000980081092241055,0.00045869207062858384,0.00025318179300286395,0.001,projection assumes same between-root variance; not prospective theory validation
+selection,0.5,Etop1,4.0-0,20,0.07939999999999997,0.01049511164404899,0.004911863446400375,0.0027111748250643903,0.003,projection assumes same between-root variance; not prospective theory validation
+selection,0.65,gini,4.0-0,20,0.04215380685025551,0.0006944151938247656,0.0003249963147468711,0.00017938646633715844,0.001,projection assumes same between-root variance; not prospective theory validation
+selection,0.65,B50_T10,4.0-0,20,0.030153000000000003,0.0008722692727653118,0.0004082345859315924,0.00022533104679638968,0.001,projection assumes same between-root variance; not prospective theory validation
+selection,0.65,Etop1,4.0-0,20,0.12265,0.013299287673841004,0.006224258226480451,0.003435570306967816,0.003,projection assumes same between-root variance; not prospective theory validation
+selection,0.8,gini,4.0-0,20,0.012241290054278963,0.0006103348829864895,0.00028564551797829297,0.00015766621887722978,0.001,projection assumes same between-root variance; not prospective theory validation
+selection,0.8,B50_T10,4.0-0,20,0.0069169999999999995,0.0003945563798015504,0.00018465806989201498,0.00010192472079066092,0.001,projection assumes same between-root variance; not prospective theory validation
+selection,0.8,Etop1,4.0-0,20,0.13920000000000002,0.01657391736561111,0.007756832097919283,0.004281496856664845,0.003,projection assumes same between-root variance; not prospective theory validation
+tax,0.5,gini,0.03-0,20,-0.21666002859371467,0.0005223309605848264,0.00024445841447285396,0.00013493239507292578,0.001,projection assumes same between-root variance; not prospective theory validation
+tax,0.5,B50_T10,0.03-0,20,0.07163299999999999,0.0009730965225018844,0.00045542319136800737,0.0002513774873143692,0.001,projection assumes same between-root variance; not prospective theory validation
+tax,0.5,Etop1,0.03-0,20,0.16759999999999992,0.009842977726598593,0.004606655378118531,0.0025427107706048396,0.003,projection assumes same between-root variance; not prospective theory validation
+tax,0.65,gini,0.03-0,20,-0.2197691124023422,0.0004747477343758853,0.00022218877910313165,0.0001226403443193566,0.001,projection assumes same between-root variance; not prospective theory validation
+tax,0.65,B50_T10,0.03-0,20,0.07173199999999999,0.0004732152064113611,0.00022147153393749293,0.00012224445036633882,0.001,projection assumes same between-root variance; not prospective theory validation
+tax,0.65,Etop1,0.03-0,20,0.17800000000000005,0.012204399551844113,0.0057118348119678565,0.0031527307133267916,0.003,projection assumes same between-root variance; not prospective theory validation
+tax,0.8,gini,0.03-0,20,-0.23069217410570175,0.0006136551643984768,0.00028719945751247135,0.0001585239385167739,0.001,projection assumes same between-root variance; not prospective theory validation
+tax,0.8,B50_T10,0.03-0,20,0.071584,0.0010142687280161884,0.0004746923766927833,0.0002620133958085921,0.001,projection assumes same between-root variance; not prospective theory validation
+tax,0.8,Etop1,0.03-0,20,0.17469999999999997,0.008596817036432409,0.0040234342224065665,0.0022207933288709864,0.003,projection assumes same between-root variance; not prospective theory validation

@@ -1,0 +1,19 @@
+{
+  "comparisons": [
+    {
+      "mode": "neutral",
+      "paths_replayed": 3,
+      "N": 1000,
+      "max_abs_error": 0.0
+    },
+    {
+      "mode": "direct",
+      "paths_replayed": 3,
+      "N": 1000,
+      "max_abs_error": 0.0
+    }
+  ],
+  "case": "interaction",
+  "status": "PASS",
+  "seconds": 6.337140099989483
+}

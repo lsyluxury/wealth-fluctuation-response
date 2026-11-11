@@ -1,0 +1,19 @@
+{
+  "theory_full_grid_runs": 504,
+  "additional_resolution_runs": 144,
+  "conditional_joint_futures": 96,
+  "conditional_branches": 4032,
+  "observation_records_ABM": 20160,
+  "validation_rows_including_initial": 630,
+  "theory_initial_states": 6,
+  "ABM_agents_per_initial": 100000,
+  "archived_replay_max_errors": {
+    "G": 1.1102230246251565e-16,
+    "M": 1.0061396160665481e-16,
+    "E": 1.1102230246251565e-16,
+    "Ruw": 1.1102230246251565e-16
+  },
+  "ABM_total_wealth_error": 4.074536263942719e-10,
+  "ABM_min_wealth": 1.6488958417918073e-18,
+  "original_six_scientific_panels_unchanged": true
+}

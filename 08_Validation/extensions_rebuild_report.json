@@ -1,0 +1,114 @@
+{
+  "status": "PASS",
+  "tables": [
+    {
+      "table": "interaction_baseline_check.csv",
+      "rows": 18,
+      "max_abs_error": 0.0,
+      "recomputed": true
+    },
+    {
+      "table": "interaction_finite_lambda.csv",
+      "rows": 9,
+      "max_abs_error": 1.1546319456101628e-14,
+      "recomputed": true
+    },
+    {
+      "table": "interaction_neutral_baseline.csv",
+      "rows": 18,
+      "max_abs_error": 0.0,
+      "recomputed": true
+    },
+    {
+      "table": "interaction_prediction.csv",
+      "rows": 9,
+      "max_abs_error": 0.0,
+      "recomputed": true
+    },
+    {
+      "table": "interaction_summary.csv",
+      "rows": 27,
+      "max_abs_error": 0.0,
+      "recomputed": true
+    },
+    {
+      "table": "interaction_symmetry.csv",
+      "rows": 27,
+      "max_abs_error": 0.0,
+      "recomputed": true
+    },
+    {
+      "table": "kernel_advantage_covariance.csv",
+      "rows": 1200,
+      "max_abs_error": 1.1102230246251565e-16,
+      "recomputed": true
+    },
+    {
+      "table": "kernel_binned.csv",
+      "rows": 210,
+      "max_abs_error": 1.1102230246251565e-16,
+      "recomputed": true
+    },
+    {
+      "table": "kernel_coefficients.csv",
+      "rows": 72,
+      "max_abs_error": 1.1102230246251565e-16,
+      "recomputed": true
+    },
+    {
+      "table": "kernel_cumulative.csv",
+      "rows": 6960,
+      "max_abs_error": 4.996003610813204e-16,
+      "recomputed": true
+    },
+    {
+      "table": "kernel_cumulative_difference.csv",
+      "rows": 1728,
+      "max_abs_error": 3.0531133177191805e-16,
+      "recomputed": true
+    },
+    {
+      "table": "kernel_lag_shares.csv",
+      "rows": 270,
+      "max_abs_error": 7.771561172376096e-16,
+      "recomputed": true
+    },
+    {
+      "table": "kernel_null_diagnostics.csv",
+      "rows": 576,
+      "max_abs_error": 0.0,
+      "recomputed": true
+    },
+    {
+      "table": "kernel_observables.csv",
+      "rows": 12,
+      "max_abs_error": 0.0,
+      "recomputed": true
+    },
+    {
+      "table": "kernel_raw_lags.csv",
+      "rows": 1728,
+      "max_abs_error": 1.1102230246251565e-16,
+      "recomputed": true
+    },
+    {
+      "table": "kernel_tails.csv",
+      "rows": 216,
+      "max_abs_error": 1.1102230246251565e-16,
+      "recomputed": true
+    },
+    {
+      "table": "kernel_validation.csv",
+      "rows": 8,
+      "max_abs_error": 1.0061396160665481e-16,
+      "recomputed": false
+    },
+    {
+      "table": "w0_fixed.csv",
+      "rows": 1000,
+      "max_abs_error": 0.0,
+      "recomputed": false
+    }
+  ],
+  "scope": "Raw archived trajectories to covariance, tail, paired DID and bootstrap summaries. No new trajectories. recomputed=false means an archived input/reference table."
+}

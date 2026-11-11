@@ -1,0 +1,14 @@
+{
+  "neutral_file": "interaction_neutral_raw.npz",
+  "direct_file": "interaction_direct_raw.npz",
+  "bootstrap_replicates": 1000,
+  "bootstrap_seed": 813503,
+  "prediction_ci": "95% Student-t influence-function covariance CI",
+  "direct_ci": "95% Student-t CI of within-future even interaction quotient",
+  "prediction_and_direct_are_independent": true,
+  "fixed_initial_condition": true,
+  "not_uncertainty_over_initial_wealth": true,
+  "neutral_estimated_mean_A": 0.12274944871793261,
+  "neutral_no_redistribution_interaction_exactly_zero": true,
+  "no_sign_selection": true
+}

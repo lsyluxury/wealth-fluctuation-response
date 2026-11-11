@@ -1,0 +1,56 @@
+{
+  "passed": true,
+  "tests": [
+    {
+      "test": "enhanced_vs_original_final_full_state_and_rng",
+      "N": 2000,
+      "branches": 14,
+      "rounds": 20,
+      "exact_equal": true
+    },
+    {
+      "test": "enhanced_vs_original_final_full_state_and_rng",
+      "N": 2000,
+      "branches": 13,
+      "rounds": 20,
+      "exact_equal": true
+    },
+    {
+      "test": "enhanced_vs_original_final_full_state_and_rng",
+      "N": 100000,
+      "branches": 3,
+      "rounds": 20,
+      "exact_equal": true
+    },
+    {
+      "test": "checkpoint_resume_full_rng",
+      "exact_equal": true,
+      "cached_normal_flag_at_checkpoint": 1
+    },
+    {
+      "test": "duplicate_and_branch_order_invariance",
+      "exact_equal": true
+    },
+    {
+      "test": "neutral_first_crossing_complete_state",
+      "N": 2000,
+      "targets": 3,
+      "exact_equal": true
+    },
+    {
+      "test": "exact_round_budget_reconstruction",
+      "rounds": 70,
+      "Q_max_error": 1.2212453270876722e-15,
+      "variance_max_error": 3.774758283725532e-15
+    },
+    {
+      "test": "all_existing_metric_definitions",
+      "fields": 63,
+      "max_abs_error": 0.0
+    },
+    {
+      "test": "pure_tax_rank_invariance_gini_contraction",
+      "passed": true
+    }
+  ]
+}

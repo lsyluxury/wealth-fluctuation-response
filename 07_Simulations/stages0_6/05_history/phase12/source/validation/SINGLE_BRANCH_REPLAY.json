@@ -1,0 +1,7 @@
+{
+  "registered_branch": "s2026101201_g65_selection_b02",
+  "single_branch_replay_from_complete_anchor": true,
+  "metrics_compared": 106,
+  "max_absolute_error": 1.7763568394002505e-15,
+  "passed": true
+}

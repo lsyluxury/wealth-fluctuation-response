@@ -1,0 +1,27 @@
+{
+  "standalone_rebuild_from_other_working_directory": true,
+  "CSV_files": {
+    "source_data/ABM_endpoint_origins.csv": true,
+    "source_data/ABM_mean_ci95.csv": true,
+    "source_data/ABM_per_seed.csv": true,
+    "source_data/panel_a.csv": true,
+    "source_data/panel_b.csv": true,
+    "source_data/panel_c.csv": true,
+    "source_data/panel_d.csv": true,
+    "source_data/panel_e.csv": true,
+    "source_data/panel_f.csv": true
+  },
+  "images": [
+    {
+      "file": "figures/Fig2_dense_final_600dpi.png",
+      "pixels_identical": true
+    },
+    {
+      "file": "figures/Fig2_dense_final_preview.png",
+      "pixels_identical": true
+    }
+  ],
+  "environment": "same Linux package versions; Windows not executed",
+  "PDF_external_renderer": "Poppler pdftoppm at 160dpi visually inspected",
+  "all_text_bounds_and_overlap_checks_passed": true
+}

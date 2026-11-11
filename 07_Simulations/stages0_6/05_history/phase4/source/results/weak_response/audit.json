@@ -1,0 +1,16 @@
+{
+  "positive_kernel_max_abs_difference": 0.0,
+  "initial_factorization": true,
+  "lambda_coefficients_fitted": false,
+  "jet_seconds": 288.2983047962189,
+  "first_round_wealth_response_max": 6.640764045889848e-20,
+  "parity_errors": {
+    "G1": 9.032324440728967e-18,
+    "M1": 5.986841050316236e-19,
+    "E1": 1.096965196043849e-17,
+    "Q0": 6.597566095943347e-18,
+    "Q2": 8.023096076392733e-18
+  },
+  "max_derivative_mass_error": 1.077720989047386e-15,
+  "max_derivative_wealth_error": 8.990007014123589e-16
+}

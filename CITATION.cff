@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "Please cite the manuscript and record the exact repository commit used."
+type: software
+title: "Fluctuation–response relations for inequality and mobility in stochastic wealth-exchange dynamics"
+authors:
+  - family-names: Lu
+    given-names: Shengyu
+  - family-names: Zhong
+    given-names: Jiachen
+  - family-names: Huang
+    given-names: Jiping
+  - family-names: Shen
+    given-names: Xiangying
+repository-code: "https://github.com/lsyluxury/wealth-fluctuation-response"
+url: "https://github.com/lsyluxury/wealth-fluctuation-response"
+date-released: 2026-11-11
+version: "2026.11.11"
+abstract: "Code, simulated data, initial states, plotting programs and verification records for the finite-time weak-selection response of inequality and mobility in stochastic wealth exchange."

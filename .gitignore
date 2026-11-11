@@ -1,0 +1,11 @@
+10_Reproduced/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.nbc
+*.nbi
+*.so
+*.dll
+*.dylib
+.DS_Store

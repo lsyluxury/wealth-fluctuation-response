@@ -1,0 +1,34 @@
+{
+  "name": "fixed development precision extension",
+  "reason": "Initial 24 future histories did not meet the predeclared 0.2 percentage-point Top10 equivalence bound. The bound is unchanged.",
+  "before_additional_results": true,
+  "new_future_replicates_per_root": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "initial_roots": [
+    2026101201,
+    2026101202,
+    2026101203,
+    2026101204,
+    2026101205,
+    2026101206
+  ],
+  "analysis": "Report original24, independent new72, and pooled96 separately. No repeated stopping. Development, not external blind validation.",
+  "same_equivalence_bounds": {
+    "G": 0.001,
+    "M": 0.001,
+    "E": 0.002
+  },
+  "timestamp_utc": "2026-10-14T12:08:59.832921+00:00"
+}

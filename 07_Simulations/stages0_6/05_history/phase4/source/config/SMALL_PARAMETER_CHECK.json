@@ -1,0 +1,10 @@
+{
+  "purpose": "independent numerical derivative validation, not coefficient estimation or fitting",
+  "lambda_values": [
+    0.01,
+    0.02
+  ],
+  "same_factorized_initial_condition": true,
+  "rounds": 300,
+  "declared_before_new_checks": true
+}

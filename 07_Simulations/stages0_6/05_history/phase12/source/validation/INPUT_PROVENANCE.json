@@ -1,0 +1,14 @@
+{
+  "inputs": [
+    {
+      "filename": "WEALTH_YARDSALE_NEUTRAL_SELECTION_TAX_HANDOFF_20261014(1).zip",
+      "sha256": "9781078757053891eaaa8fa575701f588c5eba13aa38091d8195ccb193b4175d"
+    },
+    {
+      "filename": "WEALTH_NEW_STUDY_EXECUTION_ROADMAP_20261014.md",
+      "sha256": "9cb6c4b4fae39b5e059eb18471557b6b667ef80585f4307fd19990e342d871d5"
+    }
+  ],
+  "reference_pilot_script_sha256": "505b5d8897d5d187036992d24cb8c879dec57999fbc78df42015b0dbf03213e9",
+  "reference_role": "Only the NEW common-state pilot used for regression. No old-protocol results are used as new data."
+}

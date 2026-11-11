@@ -1,0 +1,27 @@
+{
+  "figure": "S4_interaction_times",
+  "width_mm": 180,
+  "height_mm": 210,
+  "rows_rounds": [
+    80,
+    160,
+    300
+  ],
+  "columns": [
+    "G",
+    "M",
+    "E"
+  ],
+  "scales": {
+    "G": 1,
+    "M": 100,
+    "E": 100
+  },
+  "direct_points": 27,
+  "minimum_font_pt": 8,
+  "data_source": "data/interaction_summary.csv",
+  "neutral_confidence_interval": "pointwise 95% influence-function covariance interval",
+  "direct_confidence_interval": "pointwise 95% t interval of within-future even interaction quotient",
+  "statistical_unit": "independent future conditional on the same fixed initial wealth vector",
+  "n160_lambda025_G_standardized_difference": -3.069432209335541
+}
