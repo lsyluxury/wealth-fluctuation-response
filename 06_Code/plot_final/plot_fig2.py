@@ -22,6 +22,7 @@ W, H = 190.0, 198.0  # millimetres; actual PDF/SVG page dimensions
 COLORS = {0: BLUE, 1: ORANGE, 2: TEAL, 6: RED}
 NAMES = {0: 'Gaussian', 1: 'Uniform', 2: 'Two-state', 6: 'Mixed rates'}
 MARKERS = {'G': 'o', 'M': 's', 'E': '^'}
+METRIC_NAMES = {'G': 'Gini', 'M': 'Entry', 'E': 'Exit'}
 TIME_MARKERS = {20: 'o', 40: 's', 60: '^', 80: 'D'}
 
 
@@ -92,7 +93,7 @@ def main():
     for r in parity.itertuples(index=False):
         interval(b, [r.kinetic_c2], [r.mean], [r.ci_low], [r.ci_high],
                  fmt=MARKERS[r.metric], color=COLORS[r.mode], ms=4.2, zorder=4)
-    b.set(xlim=limits, ylim=limits, xlabel='Kinetic prediction', ylabel='Biased response')
+    b.set(xlim=limits, ylim=limits, xlabel='Kinetic coefficient', ylabel='Biased quotient')
     ticks = [.005, .02, .1, .5]
     b.set_xticks(ticks)
     b.set_yticks(ticks)
@@ -104,7 +105,7 @@ def main():
                          columnspacing=.8, labelspacing=.2, borderaxespad=.35)
     b.add_artist(processes)
     metric_handles = [Line2D([], [], linestyle='none', marker=MARKERS[m],
-                            color=GRAY, label=m, markersize=4.1) for m in MARKERS]
+                            color=GRAY, label=METRIC_NAMES[m], markersize=4.1) for m in MARKERS]
     b.legend(handles=metric_handles, ncol=3, loc='lower center',
              bbox_to_anchor=(.38, -.005), fontsize=8.5,
              columnspacing=.5, handletextpad=.15, borderaxespad=.2)
@@ -117,11 +118,11 @@ def main():
                   s=14, facecolors='white', edgecolors=BLUE, linewidths=1., zorder=4)
     inset.axhline(1000 * .14 * (1 - .14) / 24, color=GRAY, ls='--', lw=.7)
     inset.set(xlim=(1.5, 12.5), ylim=(4.6, 10.8),
-              xticks=[2, 6, 12], yticks=[5, 10], xlabel='Agents')
+              xticks=[2, 6, 12], yticks=[5, 10], xlabel='N')
     inset.tick_params(labelsize=9, length=2.4, pad=1.5)
     inset.xaxis.label.set_size(10)
     inset.xaxis.labelpad = .5
-    inset.text(.98, .95, 'Scaled Gini', transform=inset.transAxes,
+    inset.text(.98, .95, 'Scaled coefficient', transform=inset.transAxes,
                ha='right', va='top', fontsize=8.5)
 
     # c/d. Full-covariance matching and first-lag-only matching stay distinct.
@@ -152,7 +153,7 @@ def main():
         left.set(xlim=(0, 60), ylim=(0, .355), xticks=[0, 20, 40, 60],
                  yticks=[0, .1, .2, .3], xlabel='Lag (rounds)', ylabel='Covariance')
         right.set(xlim=(-.007, .263), xticks=[0, .125, .25],
-                  xlabel='Selection squared', ylabel='Gini response')
+                  xlabel='Selection squared', ylabel='Gini response coefficient')
         right.set_xticklabels(['0', '0.125', '0.25'])
         if panel == 'c':
             left.text(.95, .92, 'All lags\nmatched', transform=left.transAxes,
@@ -181,7 +182,7 @@ def main():
                    fmt='none', ecolor=COLORS[r.mode], elinewidth=.75,
                    capsize=1.7, capthick=.75, zorder=4)
     e.set(xlim=e_limits, ylim=e_limits, xticks=[0, .01, .02, .03],
-          yticks=[0, .01, .02, .03], xlabel='Neutral prediction', ylabel='Biased response')
+          yticks=[0, .01, .02, .03], xlabel='Neutral coefficient', ylabel='Biased quotient')
     fmt = FuncFormatter(lambda v, _: f'{v:g}')
     e.xaxis.set_major_formatter(fmt)
     e.yaxis.set_major_formatter(fmt)
@@ -204,7 +205,7 @@ def main():
         z = high[high.metric == metric].sort_values('lambda_abs')
         interval(f, z.lambda_abs, z.extra_over_P2_percent,
                  z.bootstrap95_low, z.bootstrap95_high,
-                 fmt=MARKERS[metric] + '-', color=color, ms=4.2, lw=1.5, label=metric)
+                 fmt=MARKERS[metric] + '-', color=color, ms=4.2, lw=1.5, label=METRIC_NAMES[metric])
     f.axhline(0, color=GRAY, ls='--', lw=.9, zorder=0)
     f.set(xlim=(.55, 8.45), ylim=(-5.3, 8.1), xticks=[1, 2, 4, 8],
           yticks=[-4, 0, 4, 8], xlabel='Selection', ylabel='Extra response (%)')

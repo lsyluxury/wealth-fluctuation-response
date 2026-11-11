@@ -1,0 +1,24 @@
+{
+  "validation": {
+    "source": "04_Plot_Data/Main/Fig4_SI_all_precision_checks.csv",
+    "rows": 504,
+    "definition": "100 * (theory - simulation) / observed simulation mean",
+    "intervals": "The paired difference interval endpoints are divided by the observed simulation mean. These are descriptive normalized difference intervals, not confidence intervals for a ratio with an estimated denominator.",
+    "protocol": "Six matched initial states, 16 continuations per state, 42 parameter combinations, t=5,10,20,30."
+  },
+  "higher_order": {
+    "source": "07_Simulations/figures_core/packages/Fig2/source/strong_bias_matched_roots.csv",
+    "absolute_interval": "Pointwise paired percentile bootstrap of the mean difference across 130 initial states.",
+    "seed": 2026111101,
+    "resamples": 5000,
+    "relative_interval": "Existing ratio-bootstrap intervals retained unchanged from Fig2_f_higher_order.csv.",
+    "units": "Gini for G; probability for M. Multiply M values by 100 for percentage points."
+  },
+  "notation": {
+    "G": "Gini G",
+    "M": "entry P_in",
+    "E": "exit P_out",
+    "Q": "wealth\u2013advantage cross moment J_wu",
+    "Cq": "normalized top overlap O_q"
+  }
+}

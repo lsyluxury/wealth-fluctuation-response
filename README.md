@@ -29,10 +29,15 @@ The following commands recompute summaries from archived per-root or per-path re
 ```bash
 python reproduce.py tables
 python reproduce.py extensions
+python reproduce.py revision-checks
 python reproduce.py replay interaction
 ```
 
 `tables` rebuilds the 32 main CSV tables. It retains the archived deterministic kinetic checkpoints, the Figure 1d archived root-level interval summary, and the Figure 2f archived bootstrap interval, as explicitly described in its JSON report. `extensions` recalculates 16 response and interaction tables; two tables are archived initial-state/reference inputs. These commands do not generate new full ensembles. `replay interaction` regenerates three neutral and three biased trajectories at their original seeds and compares them to archived records. Run each summary reconstruction in a new output directory if an earlier working copy already exists, for example `python reproduce.py tables --out 10_Reproduced/tables_second`.
+
+`revision-checks` computes descriptive relative errors for the 504 positive-time matched-state comparisons and paired bootstrap intervals for absolute higher-order response differences. It uses the released records and writes two CSVs plus method metadata to `10_Reproduced/revision_checks/`. The ratio-bootstrap intervals displayed in Figure 2f are preserved from the archived table; the added absolute intervals are obtained by resampling the 130 paired initial states.
+
+The manuscript uses `P_in` and `P_out` for entry and exit, `J_wu` for the wealth–advantage cross moment, and `O_q` for normalized top overlap. Archived columns retain their original names `M`, `E`, `Q`, and `Cq`, respectively. Plot legends use Gini, Entry, and Exit. The quadratic Gini response coefficient is distinct from the Gini level.
 
 ## Full simulation workflows
 
@@ -64,7 +69,7 @@ The full lag-kernel generator embeds C++17 source and requires a compatible C++ 
 | `01_Figures` | Reconstructed publication figures in PDF, SVG, and PNG |
 | `04_Plot_Data/Main` | 32 canonical main-figure and precision-check CSVs |
 | `04_Plot_Data/Response_Extensions` | 18 lag-kernel and selection–redistribution CSVs |
-| `04_Plot_Data/Derived_Checks` | Three diagnostics extracted from archived observations |
+| `04_Plot_Data/Derived_Checks` | Time-course diagnostics, relative validation errors, and paired higher-order intervals |
 | `06_Code` | Reproduction entry points and main-figure plotting code |
 | `07_Simulations/figures_core` | Figure-specific raw observations, exact controls, solvers, complete initial states |
 | `07_Simulations/stages0_6/02_stages` | Stage-specific ABM and kinetic computations |

@@ -3,7 +3,7 @@
 from pathlib import Path
 import argparse,os,subprocess,sys
 ROOT=Path(__file__).resolve().parent
-TASKS={'check':'check_package.py','figures':'build_final_figures.py','supplement':'plot_supplement.py','tables':'rebuild_tables.py','extensions':'rebuild_extensions.py','tests':'verify_exact_controls.py','simulate':'run_simulation_task.py','replay':'replay_case.py'}
+TASKS={'check':'check_package.py','figures':'build_final_figures.py','supplement':'plot_supplement.py','tables':'rebuild_tables.py','extensions':'rebuild_extensions.py','revision-checks':'rebuild_revision_checks.py','tests':'verify_exact_controls.py','simulate':'run_simulation_task.py','replay':'replay_case.py'}
 def main():
  parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('command',choices=TASKS);args,extra=parser.parse_known_args()
  env=os.environ.copy();env.setdefault('MPLBACKEND','Agg');env.setdefault('MPLCONFIGDIR',str(ROOT/'10_Reproduced/matplotlib-cache'))

@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-11",
+  "status": "PASS",
+  "checks": {
+    "revision_checks_rebuilt_files_match_release": {
+      "higher_order_absolute_intervals.csv": true,
+      "validation_relative_diagnostics.csv": true,
+      "revision_checks_metadata.json": true
+    },
+    "main_figure_builder": "PASS: four figures rebuilt from unchanged canonical data",
+    "supplementary_figure_builder": "PASS: two figures and standalone tables rebuilt",
+    "visual_review": "PASS: six figures inspected for labels and layout"
+  },
+  "added_results": {
+    "relative_validation_rows": 504,
+    "absolute_higher_order_intervals": 8,
+    "bootstrap_resamples": 5000
+  },
+  "scope": "Reanalysis of archived records and figure reconstruction. No new simulation trajectories or full ensembles generated in this revision."
+}

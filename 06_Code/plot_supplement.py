@@ -40,7 +40,7 @@ cum=read('Response_Extensions/kernel_cumulative.csv')
 diff=read('Response_Extensions/kernel_cumulative_difference.csv')
 
 fig,axs=plt.subplots(2,2,figsize=(7.25,5.75),layout='constrained')
-for label,ax in zip('ABCD',axs.flat):
+for label,ax in zip('abcd',axs.flat):
     ax.text(-.15,1.08,label,transform=ax.transAxes,fontweight='bold',fontsize=11)
     ax.tick_params(width=.7,length=3)
 ax=axs[0,0]
@@ -74,16 +74,17 @@ ax.axvline(20,color='#777777',lw=.8,ls=':')
 ax.axhline(y[-1],color='#555555',lw=.8,ls='--')
 at20=y[np.flatnonzero(x==20)[0]]
 ax.annotate('',xy=(65,y[-1]),xytext=(65,at20),arrowprops={'arrowstyle':'<->','color':'#333333','lw':.8})
-ax.text(62,.5*(at20+y[-1]),'74.14%\nfrom d > 20',ha='right',va='center',fontsize=8)
+ax.text(62,.5*(at20+y[-1]),'74.1%\nfrom d > 20',ha='right',va='center',fontsize=8)
 ax.set(xlabel='Maximum included lag D (rounds)',ylabel='Mixed minus Gaussian coefficient',xlim=(0,80),ylim=(-.0006,.0132))
 for ext in ['pdf','png']:fig.savefig(OUT/f'FigS1.{ext}',dpi=300)
 plt.close(fig)
 
 inter=read('Response_Extensions/interaction_summary.csv')
+observable_tex={'G':'G','M':r'P_{\rm in}','E':r'P_{\rm out}'}
 time_colors={80:'#2865A8',160:'#D4882C',300:'#824A99'}
 time_markers={80:'o',160:'s',300:'^'}
 fig,axs=plt.subplots(2,3,figsize=(7.35,5.25),layout='constrained')
-for label,ax in zip('ABCDEF',axs.flat):
+for label,ax in zip('abcdef',axs.flat):
     ax.text(-.18,1.09,label,transform=ax.transAxes,fontweight='bold',fontsize=11)
     ax.tick_params(width=.7,length=3)
 for j,obs in enumerate(['G','M','E']):
@@ -100,7 +101,7 @@ for j,obs in enumerate(['G','M','E']):
         values.extend(col(zz,'direct_low'));values.extend(col(zz,'direct_high'))
     low=min(0,min(values));high=max(values)*1.08
     ax.plot([low,high],[low,high],color='#888888',ls='--',lw=.8,zorder=0)
-    ax.set(xlim=(low,high),ylim=(low,high),xlabel='Neutral prediction',ylabel='Direct even quotient' if j==0 else '',title={'G':'Gini','M':'Bottom entry','E':'Top exit'}[obs])
+    ax.set(xlim=(low,high),ylim=(low,high),xlabel='Neutral coefficient',ylabel='Biased quotient' if j==0 else '',title={'G':'Gini','M':'Bottom entry','E':'Top exit'}[obs])
     ax.locator_params(axis='both',nbins=4)
     if j==0:ax.legend(loc='upper left')
     ax=axs[1,j]
@@ -121,7 +122,7 @@ plt.close(fig)
 # All 27 independent interaction validations, not a selected subset.
 table=[r'\begingroup',r'\footnotesize',r'\setlength{\tabcolsep}{3pt}',
 r'\begin{longtable}{r r c p{0.29\textwidth} p{0.29\textwidth} r}',
-r'\caption{All weak-selection interaction comparisons. Prediction and direct quotient are coefficients in probability units for $M,E$. Brackets are pointwise 95\% intervals. $z$ is (direct minus prediction) divided by the standard error combining the independent ensembles; it is not adjusted for multiple comparisons.}\label{tab:si_allinteraction}\\',
+r'\caption{Quadratic interaction predictions and biased quotients. Entry $P_{\rm in}$ and exit $P_{\rm out}$ use probability units. Brackets are pointwise 95\% intervals. $z$ is the difference divided by the combined standard error of the independent ensembles.}\label{tab:si_allinteraction}\\',
 r'\toprule $n$ & $|\lambda|$ & $X$ & Neutral prediction [95\% CI] & Direct quotient [95\% CI] & $z$\\\midrule',
 r'\endfirsthead',
 r'\multicolumn{6}{l}{Table~\thetable\ continued}\\',
@@ -130,7 +131,7 @@ r'\endhead',r'\bottomrule\endfoot']
 for r in sorted(inter,key=lambda x:(int(x['rounds']),float(x['lambda_abs']),{'G':0,'M':1,'E':2}[x['observable']])):
     nums=[float(r[k]) for k in ['prediction','prediction_low','prediction_high','direct','direct_low','direct_high','standardized_discrepancy']]
     p,pl,ph,d,dl,dh,z=nums
-    table.append(f"{r['rounds']} & {float(r['lambda_abs']):g} & ${r['observable']}$ & {p:.5f} [{pl:.5f}, {ph:.5f}] & {d:.5f} [{dl:.5f}, {dh:.5f}] & {z:.2f} \\\\")
+    table.append(f"{r['rounds']} & {float(r['lambda_abs']):g} & ${observable_tex[r['observable']]}$ & {p:.3g} [{pl:.3g}, {ph:.3g}] & {d:.3g} [{dl:.3g}, {dh:.3g}] & {z:.2f} \\\\")
 table.extend([r'\end{longtable}',r'\endgroup'])
 
 precision=read('Main/Fig4_SI_all_precision_checks.csv')
@@ -145,7 +146,7 @@ for t in [5,10,20,30]:
         maxci=max(max(abs(float(r['ci_lo'])),abs(float(r['ci_hi']))) for r in z)
         tol=float(z[0]['tolerance'])
         passed=sum(float(r['ci_lo'])>=-tol and float(r['ci_hi'])<=tol for r in z)
-        pt.append(f'{t} & ${obs}$ & {maxmean:.6f} & {maxci:.6f} & {tol:.3f} & {passed}/42 \\\\')
+        pt.append(f'{t} & ${observable_tex[obs]}$ & {maxmean:.6f} & {maxci:.6f} & {tol:.3f} & {passed}/42 \\\\')
 pt.extend([r'\bottomrule',r'\end{tabular}',r'\end{table}'])
 
 (OUT/'interaction_table.tex').write_text('\n'.join(table)+'\n',encoding='utf-8')

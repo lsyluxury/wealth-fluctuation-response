@@ -2,6 +2,8 @@
 
 All data are from simulations, deterministic numerical theory, or exact finite-state enumeration. The complete table-level schema is `04_Plot_Data/DATA_INDEX.csv`; the semicolon-separated `column_names` field lists columns in their exact order.
 
+The revised manuscript notation maps `M` to entry `P_in`, `E` to exit `P_out`, `Q` to cross moment `J_wu`, and `Cq` to normalized overlap `O_q`. CSV column names are retained for compatibility.
+
 ## Model and observables
 
 Mean wealth is normalized to one. The stake fraction is `epsilon = 0.14`. Ten complete random-matching exchange rounds form one model-time unit. A complete round matches every agent once. Baseline Gaussian–Poisson renewal uses `h = 0.3`, `mu = 1`, and `r = 10`. The redistribution contraction per round is `rho = exp(-chi/10)`.
@@ -70,4 +72,8 @@ The interaction analysis uses the same fixed wealth state, 32000 neutral futures
 
 ## Derived checks
 
-The three `Derived_Checks` tables inspect already recorded times and lag contributions. They do not supply a fitted response-kernel tail exponent or exact continuous-time first-passage times. Interpolating between sampled Gini observations is not an observed first passage.
+The original three `Derived_Checks` tables inspect already recorded times and lag contributions. They do not supply a fitted response-kernel tail exponent or exact continuous-time first-passage times. Interpolating between sampled Gini observations is not an observed first passage.
+
+`validation_relative_diagnostics.csv` retains the 504 positive-time matched-state comparisons and adds `100 * (theory - ABM) / observed ABM mean`. The paired difference interval endpoints are divided by that same observed mean; the normalized endpoints are descriptive scales and are not confidence intervals for a ratio with an estimated denominator. At t=30, the maximum absolute relative entry difference is 0.657%, and the largest absolute normalized interval endpoint is 2.19%. At t=5, entry is rare and these relative measures can be much larger. The late-intervention cohort in Figure 4c is a separate protocol.
+
+`higher_order_absolute_intervals.csv` adds pointwise percentile-bootstrap intervals for the mean matched-process difference across the 130 prepared states in Figure 2f. G values use Gini units and M values use probability units. Existing ratio-bootstrap intervals remain unchanged. `revision_checks_metadata.json` records the source files, resampling count, and random seed; `python reproduce.py revision-checks` rebuilds these files.
