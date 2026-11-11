@@ -2,7 +2,7 @@
 
 All data are from simulations, deterministic numerical theory, or exact finite-state enumeration. The complete table-level schema is `04_Plot_Data/DATA_INDEX.csv`; the semicolon-separated `column_names` field lists columns in their exact order.
 
-The revised manuscript notation maps `M` to entry `P_in`, `E` to exit `P_out`, `Q` to cross moment `J_wu`, and `Cq` to normalized overlap `O_q`. CSV column names are retained for compatibility.
+The revised manuscript notation maps `M` to entry `P_in`, `E` to exit `P_out`, `Q` to cross moment `J_wu`, and `Cq` to normalized overlap `Omega_q`. Normalized one-round advantage autocorrelations use `beta_1` and `beta_u(1)`; the quadratic path weight is `A_n`. The redistribution contraction remains `rho`, and `W` denotes the wealth state or history. CSV column names and archived computational variable names are retained for compatibility.
 
 ## Model and observables
 

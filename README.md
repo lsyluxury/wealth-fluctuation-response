@@ -37,7 +37,7 @@ python reproduce.py replay interaction
 
 `revision-checks` computes descriptive relative errors for the 504 positive-time matched-state comparisons and paired bootstrap intervals for absolute higher-order response differences. It uses the released records and writes two CSVs plus method metadata to `10_Reproduced/revision_checks/`. The ratio-bootstrap intervals displayed in Figure 2f are preserved from the archived table; the added absolute intervals are obtained by resampling the 130 paired initial states.
 
-The manuscript uses `P_in` and `P_out` for entry and exit, `J_wu` for the wealth–advantage cross moment, and `O_q` for normalized top overlap. Archived columns retain their original names `M`, `E`, `Q`, and `Cq`, respectively. Plot legends use Gini, Entry, and Exit. The quadratic Gini response coefficient is distinct from the Gini level.
+The manuscript uses `P_in` and `P_out` for entry and exit, `J_wu` for the wealth–advantage cross moment, and `Omega_q` for normalized top overlap. Archived columns retain their original names `M`, `E`, `Q`, and `Cq`, respectively. The normalized one-round advantage autocorrelations are denoted by `beta_1` and `beta_u(1)`, and the quadratic path weight by `A_n`. The redistribution contraction remains `rho`, and `W` denotes the wealth state or history. Plot legends use Gini, Entry, and Exit. The quadratic Gini response coefficient is distinct from the Gini level.
 
 ## Full simulation workflows
 
